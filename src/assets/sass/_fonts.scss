@@ -1,0 +1,14 @@
+
+//-----===== Подключения шрифтов ====-----//
+
+// oswald-400 - latin_cyrillic
+@include fontInclude("Oswald","oswald-400",normal,400,"oswald-regular");
+
+// oswald-600 - latin_cyrillic
+@include fontInclude("Oswald","oswald-600",normal,600,"oswald-600");
+
+// oswald-300 - latin_cyrillic
+@include fontInclude("Oswald","oswald-300",normal,300,"oswald-300");
+
+// oswald-500 - latin_cyrillic
+@include fontInclude("Oswald","oswald-500",normal,500,"oswald-500");

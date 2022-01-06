@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@import "variables";
+@import "function";
+@import "mixins";
+
+/* Fonts */
+@import "fonts";
+
+// Normalize.css
+@import "normalize";  // normalize / reset
+
+/* Default styles */
+@import "core";
+
+/* Animation */
+@import "animations";
+
+/* Blocks */
+@import "blocks/container";

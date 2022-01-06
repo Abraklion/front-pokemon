@@ -1,0 +1,38 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+#
+## These files are text and should be normalized (Convert crlf => lf)
+#
+
+# source code
+*.html text
+*.pug text
+*.css text
+*.sass text
+*.scss text
+*.less text
+*.styl text
+*.js text
+*.json text
+*.svg text
+
+# git config
+.gitattributes text
+.gitignore text
+
+# Documentation
+*.md text
+
+#
+## Binary files should be left untouched
+#
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+

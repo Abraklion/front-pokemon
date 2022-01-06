@@ -1,0 +1,81 @@
+
+//-----===== Мексины ====-----//
+
+// ------- Подключения шрифта ------- //
+
+@mixin fontInclude($font_name, $file_name, $style, $weight, $local) {
+  @font-face {
+    font-family: $font_name;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    src: local($local), url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{$file_name}.woff") format("woff");
+  }
+}
+
+// ------- Адаптивная типографика ------- //
+
+@mixin dynamicText($minSizePercent, $maxSize, $minSize, $minWidthPx, $maxWidth, $minWidth) {
+  font-size: calc(#{$minSizePercent} + (#{$maxSize} - #{$minSize}) * (100vw - #{$minWidthPx}) / (#{$maxWidth} - #{$minWidth}));
+}
+
+// minSizePercent - минимальне значения шрифта в %;
+// maxSize - максимальный размер шрифта;
+// minSize - минимальный размер шрифта;
+// minWidthPx - минимальный ширина viewport в px;
+// maxWidth - максимальная ширина viewport;
+// minWidth - минимальная ширина viewport;
+
+// ------- Адаптивное видео ------- //
+
+@mixin adaptive-video() {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+// ------- Убирает обтекания ------- //
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// ------- Обнуляет списки ------- //
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// ------- Параметры шрифта ------- //
+
+@mixin font($fw:400,$fs:16px,$lh:24px,$ff:"Arial") {
+
+  $ff: $ff, sans-serif;
+
+  font-weight: $fw;
+  font-size: $fs;
+  @if $ff != $font-family-basic{
+    font-family: $ff;
+  }
+  line-height: $lh;
+}
+
+

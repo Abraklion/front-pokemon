@@ -1,0 +1,27 @@
+
+//-----===== Функции ====-----//
+
+// избавляется от единиц измерения
+@function fun-delete-units($units) {
+  @return $units / (($units * 0) + 1);
+}
+
+// переводит px в em
+@function fun-px-tp-em($px, $context: 16px) {
+  @return ($px / $context) * 1em;
+}
+
+// переводит px в rem
+@function fun-px-to-rem($size, $basicSize: 16px) {
+  @return $size / $basicSize#{rem};
+}
+
+// считает ширину элемента в % от общий ширины блока
+@function fun-width-interest($widthElement, $widthBlock) {
+  @return ($widthElement / $widthBlock) * 100%;
+}
+
+// межбуквенный интервал
+@function fun-letter-spacing($sz, $context:16px) {
+  @return ($sz * $context) / 1000;
+}

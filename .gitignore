@@ -1,0 +1,12 @@
+# Gulp
+/node_modules/
+/build/
+/dist/
+
+# WebStorm
+/.idea/
+/.vscode/
+
+# Mac
+/.DS_Store/
+Thumbs.db
