@@ -1,0 +1,27 @@
+<section class="social">
+  <div class="container">
+
+    <div class="social__inner">
+
+      <h2 class="social__title">{{social.sectionTitle}}</h2>
+      <p class="social__subtitle">{{social.sectionSubTitle}}</p>
+
+      <ul class="social__list">
+        {{#each social.list}}
+
+        <li class="social__item">
+          <a href="{{this.link}}" class="social__link">
+            <svg class="social__svg" width="34" height="34" aria-hidden="true">
+              <use xlink:href="assets/img/sprite.svg#{{this.icon}}"/>
+            </svg>
+            {{this.name}}
+          </a>
+        </li>
+        {{/each}}
+
+      </ul>
+
+    </div><!--/.social__inner-->
+
+  </div><!--/.container-->
+</section><!--/.social-->

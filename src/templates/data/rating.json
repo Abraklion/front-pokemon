@@ -1,0 +1,21 @@
+{
+  "sectionTitle": "Рейтинг игроков",
+
+  "item" : [
+    {
+      "title": "Ранг",
+      "name": "Vladislav903",
+      "check": "178681"
+    },
+    {
+      "title": "Покедекс",
+      "name": "Vladislav903",
+      "check": "178681"
+    },
+    {
+      "title": "Шайнидекс",
+      "name": "Vladislav903",
+      "check": "178681"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "logo": "icon-logo-footer.svg",
+  "copyright": "© 2019-2021",
+
+  "list" : [
+    {
+      "name": "Правовая информация",
+      "icon": "icon-information.svg"
+    },
+    {
+      "name": "Служба поддержки",
+      "icon": "icon-support.svg"
+    }
+  ]
+}

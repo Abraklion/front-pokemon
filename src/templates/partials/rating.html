@@ -1,0 +1,35 @@
+<section class="rating">
+  <div class="container">
+
+    <div class="rating__inner">
+
+      <h2 class="rating__title">{{rating.sectionTitle}}</h2>
+
+      <ul class="rating__row">
+        {{#each rating.item}}
+
+        <li class="rating__column">
+          <h3 class="rating__heading">{{this.title}}</h3>
+
+          <ul class="rating__list">
+            {{#repeat 5}}
+
+            <li class="rating__item">
+              <svg class="rating__item-svg" width="18" height="18" aria-label="Имя игрока">
+                <use xlink:href="assets/img/sprite.svg#user"/>
+              </svg>
+              {{this.name}}
+              <span class="rating__check">{{this.check}}</span>
+            </li>
+            {{/repeat}}
+
+          </ul><!--/.rating__list-->
+        </li>
+        {{/each}}
+
+      </ul><!--/.rating__block-->
+
+    </div><!--/.rating__inner-->
+
+  </div><!--/.container-->
+</section><!--/.rating-->

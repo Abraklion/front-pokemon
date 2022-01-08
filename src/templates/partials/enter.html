@@ -1,0 +1,38 @@
+<section class="modal">
+  <div class="container">
+
+    <div class="modal__inner">
+
+      <h2 class="modal__title">Войти в игру</h2>
+
+      <form class="modal__form form" action="/" method="POST">
+
+        <div class="form__element">
+          <label class="visually-hidden" for="name-enter">Имя тренера</label>
+          <input class="form__input" id="name-enter" type="text" name="name" minlength="3" maxlength="20" placeholder="Логин" required>
+        </div>
+
+        <div class="form__element">
+          <label class="visually-hidden" for="password-enter">Пароль</label>
+          <input class="form__input" id="password-enter" type="password" name="password" minlength="3" maxlength="20" placeholder="Пароль" required>
+        </div>
+
+        <div class="form__element">
+          <button class="form__button button" type="submit" name="btn-enter">Войти</button>
+        </div>
+
+      </form><!--/.form-->
+
+      <div class="modal__info">
+        <a href="" class="modal__info-link">Регистрация</a>
+        <a href="" class="modal__info-link">Забыли пароль?</a>
+      </div><!--/.modal__info-->
+
+      <button class="modal__button button js-close" type="button">
+        <span class="visually-hidden">Закрыть окно входа в игру</span>
+      </button>
+
+    </div><!--/.modal__inner-->
+
+  </div><!--/.container-->
+</section><!--/.modal-->

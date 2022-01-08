@@ -1,0 +1,47 @@
+<section class="news">
+
+  <h2 class="news__title">{{news.sectionTitle}}</h2>
+
+  <ul class="news__list">
+    {{#repeat 5}}
+
+    <li class="news__item">
+
+      <article class="article">
+
+        <header class="article__header">
+          <h3 class="article__title">{{news.titleNews}}</h3>
+        </header>
+
+        <p class="article__content">{{news.descriptionNews}}</p>
+
+        <figure class="article__img">
+          <img src="assets/img/{{news.imgNews}}" alt="">
+        </figure>
+
+        <footer class="article__header">
+          <ul class="article__list">
+            <li class="article__item">
+              <svg class="article__item-svg" width="12" height="12" aria-label="Автор">
+                <use xlink:href="assets/img/sprite.svg#user"/>
+              </svg>
+              {{news.authorNews}}
+            </li>
+            <li class="article__item">
+              <svg class="article__item-svg" width="12" height="12" aria-label="Дата статьи">
+                <use xlink:href="assets/img/sprite.svg#time"/>
+              </svg>
+              {{news.dateNews}}
+            </li>
+          </ul>
+          <a href="" class="article__button button">{{news.more}}</a>
+        </footer>
+
+      </article><!--/.article-->
+
+    </li><!--/.news__item-->
+    {{/repeat}}
+
+  </ul><!--/.news__list-->
+
+</section><!--/.news-->

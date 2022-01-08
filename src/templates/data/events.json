@@ -1,0 +1,18 @@
+{
+  "sectionTitle": "События",
+
+  "post1" :{
+    "title": "Игровые события",
+    "subtitle": "Турнир в честь Зимних праздников на 100 ур. для тренеров категории А #22",
+    "img": "sword.svg",
+    "time": "12.11.2021"
+  },
+  "post2" :{
+    "title": "Антикварный дом",
+    "trainer": "Divergent Kings_DK-0",
+    "pokemon": "Спаркозавр",
+    "img": "charmeleon.png",
+    "time": "12.11.2021"
+  }
+
+}

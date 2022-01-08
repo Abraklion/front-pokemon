@@ -1,0 +1,25 @@
+<section class="info">
+  <div class="container">
+
+    <div class="info__inner">
+
+      <div class="info__wrapper-text">
+
+        <p class="info__subtitle">{{info.logo}}</p>
+        <h2 class="info__title">Готовы <span>ли вы,</span> стать тренером <span>Покемонов?</span></h2>
+        <p class="info__description">Начни свой путь в мире Покемонов, развивай своих питомцев, улучшай их навыки. <span>Выполняй увлекательные задания, побеждай на турнирах, лови редких Покемонов.</span> Стань настоящим тренером карманных монстров!</p>
+
+        <ul class="info__count">
+          {{#each info.count}}
+            <li class="info__count--item">{{ this }}</li>
+          {{/each}}
+        </ul>
+
+        <button class="info__button button" type="button">{{info.buttonText}}</button>
+
+      </div><!--/.info__wrapper-text-->
+
+    </div><!--/.info__inner-->
+
+  </div><!--/.container-->
+</section><!--/.info-->

@@ -2,10 +2,42 @@
 layout: default
 
 title: OldPokemon - браузерная онлайн игра про Покемонов
-description: OldPokemon - Бесплатная браузерная игра по мотивам мира Покемонов. Стань тренером покемонов. Лови, тренируй и сражайся с другими тренерами покемонов. Игра не требует установки!
+description: OldPokemon - Бесплатная браузерная игра по мотивам мира Покемонов. Стань тренером лови и тренируй покемонов. Сражайся с другими тренерами покемонов. Игра не требует установки!
 
 link: style.min.css
 script: app.min.js
 ---
 
+{{> header}}
 
+<main class="page__content">
+
+  <h1 class="visually-hidden">OldPokemon - браузерная онлайн игра про Покемонов</h1>
+
+  {{> info}}
+
+  <div class="container">
+
+    <div class="page__inner">
+
+      {{> news}}
+
+      {{> events}}
+
+    </div>
+
+  </div>
+
+  {{> rating}}
+
+  {{> offer}}
+
+  {{> social}}
+
+</main>
+
+{{> footer}}
+
+{{> registration}}
+
+{{> enter}}

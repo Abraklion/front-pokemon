@@ -1,0 +1,22 @@
+{
+  "sectionTitle": "Сообщество тренеров Покемонов",
+  "sectionSubTitle": "Присоединяйтесь к нашему дружному сообществу",
+
+  "list" : [
+    {
+      "name": "Vkontakte",
+      "icon": "icon-vk",
+      "link": "https://vk.com/mmorpgpokemon"
+    },
+    {
+      "name": "Discord",
+      "icon": "icon-discord",
+      "link": "https://discord.com/invite/bfQKbyM"
+    },
+    {
+      "name": "Telegram",
+      "icon": "icon-telegram",
+      "link": "https://t.me/oldpokemon"
+    }
+  ]
+}

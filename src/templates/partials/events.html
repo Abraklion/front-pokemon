@@ -1,0 +1,69 @@
+<aside class="events">
+  <h2 class="events__title">{{events.sectionTitle}}</h2>
+
+  <ul class="events__grid">
+    <li class="events__row">
+      <h3 class="events__heading">{{events.post1.title}}</h3>
+
+      <ul class="events__list">
+        {{#repeat 4}}
+
+        <li class="events__item">
+
+          <div class="events__header">
+            <h4 class="events__headline">
+              <a href="">{{events.post1.subtitle}}</a>
+            </h4>
+            <p class="event__date">
+              <svg class="events__svg" width="12" height="12" aria-label="Дата статьи">
+                <use xlink:href="assets/img/sprite.svg#time"/>
+              </svg>
+              {{events.post1.time}}
+            </p>
+          </div>
+          <div class="events__img">
+            <a href="" class="events__img-link">
+              <img src="assets/img/{{events.post1.img}}" width="24" height="24" alt="">
+            </a>
+          </div>
+
+        </li><!--/.events__item-->
+        {{/repeat}}
+
+      </ul><!--/.events__list-->
+
+    </li><!--/.events__block-item-->
+
+    <li class="events__row">
+      <h3 class="events__heading">{{events.post2.title}}</h3>
+
+      <ul class="events__list">
+        {{#repeat 4}}
+
+        <li class="events__item">
+
+          <div class="events__header">
+            <h4 class="events__trainer">Тренер: {{events.post2.trainer}}</h4>
+            <h5 class="events__pokemon">Покемон: <a href="">{{events.post2.pokemon}}</a></h5>
+            <p class="event__date">
+              <svg class="events__svg" width="12" height="12" aria-label="Дата статьи">
+                <use xlink:href="assets/img/sprite.svg#time"/>
+              </svg>
+              {{events.post2.time}}
+            </p>
+          </div>
+          <div class="events__img">
+            <a href="" class="events__img-link">
+              <img src="assets/img/{{events.post2.img}}" width="32" height="30" alt="">
+            </a>
+          </div>
+
+        </li><!--/.events__item-->
+        {{/repeat}}
+
+      </ul><!--/.events__list-->
+
+    </li><!--/.events__block-item-->
+  </ul><!--/.events__block-list-->
+
+</aside><!--/.events-->

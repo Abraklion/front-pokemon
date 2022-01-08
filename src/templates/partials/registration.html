@@ -1,0 +1,57 @@
+<section class="modal">
+  <div class="container">
+
+    <div class="modal__inner">
+
+      <h2 class="modal__title">Регистрация тренера</h2>
+
+      <form class="modal__form form" action="/" method="POST">
+
+        <div class="form__element">
+          <label class="form__name" for="name">Имя тренера</label>
+          <input class="form__input" id="name" type="text" name="name" minlength="3" maxlength="20" placeholder="Логин может состоять только из букв" required>
+        </div>
+
+        <div class="form__element">
+          <label class="form__name" for="male">Пол</label>
+          <div class="form__radio-inner">
+            <label class="form__floor" for="male">Мужской</label>
+            <input class="form__input" id="male" type="radio" name="floor" checked>
+            <label class="form__floor" for="female">Женский</label>
+            <input class="form__input" id="female" type="radio" name="floor">
+          </div>
+        </div>
+
+        <div class="form__element">
+          <label class="form__name" for="password">Пароль</label>
+          <input class="form__input" id="password" type="password" name="password" minlength="3" maxlength="20" placeholder="Пароль может состоять только из букв и цифр" required>
+        </div>
+
+        <div class="form__element">
+          <label class="form__name" for="repeat-password">Повторите пароль</label>
+          <input class="form__input" id="repeat-password" type="password" name="repeat-password" minlength="3" maxlength="20" placeholder="Повторите придуманный вами пароль" required>
+        </div>
+
+        <div class="form__element">
+          <label class="form__name" for="email">Почта</label>
+          <input class="form__input" id="email" type="email" name="repeat-password" minlength="3" maxlength="30" placeholder="Адрес вашей электронной почты" required>
+        </div>
+
+        <div class="form__element">
+          <div class="form__checkbox-inner">
+            <label class="form__floor" for="regulations">Я принимаю пользовательское соглашение, политику конфиденциальности.</label>
+            <input class="form__input" id="regulations" type="checkbox" name="regulations" checked required>
+          </div>
+          <button class="form__button button" type="submit" name="btn-reg">Создать персонажа</button>
+        </div>
+
+      </form><!--/.form-->
+
+      <button class="modal__button button js-close" type="button">
+        <span class="visually-hidden">Закрыть окно регистрации</span>
+      </button>
+
+    </div><!--/.modal__inner-->
+
+  </div><!--/.container-->
+</section><!--/.modal-->
