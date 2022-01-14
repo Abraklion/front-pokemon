@@ -1,0 +1,149 @@
+.modal{
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+
+  position: fixed;
+  z-index: 0;
+
+  background-color: rgba($bg-modal,0.9);
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.2s ease;
+
+
+  &--active{
+    visibility: visible;
+    opacity: 1;
+    z-index: 20;
+  }
+}
+
+.modal__inner{
+  position: relative;
+
+  padding: 74px 16px 44px 16px;
+  margin: 32px 0;
+
+  background-color: $bg-form;
+  background-image: url(../img/bg-secondary.jpg);
+  background-position: 0 0;
+  background-size: 64px 64px;
+  background-repeat: repeat;
+
+  border-radius: 8px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bg-secondary@2x.jpg);
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url(../img/bg-secondary@3x.jpg);
+  }
+}
+
+.modal__title{
+  display: inline-block;
+
+  position: relative;
+  left: 50%;
+
+  margin: 0 0 38px 0;
+  padding: 0 0 0 59px;
+
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 32px;
+
+  text-transform: uppercase;
+
+  transform: translateX(-50%);
+
+  &::before{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 52px;
+    height: 48px;
+
+    background-image: url(../img/icon-logo-modal.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: translateY(-50%);
+  }
+}
+
+.modal__form{
+
+}
+
+.modal__button{
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  padding: 0;
+
+  background-color: transparent;
+
+  border: 1px solid rgba($color-modal, 0.9);
+  border-radius: 4px;
+
+  &::before,&::after{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: $color-modal;
+
+    border-radius: 2px;
+
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+
+  &::after{
+    content: "";
+
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+
+  &:focus{
+    outline-width: 0;
+  }
+}
+
+.modal__info{
+  margin: 4px 0 10px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__info-link{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+
+  text-decoration: none;
+
+  color: $color-modal;
+}
+

@@ -12,7 +12,7 @@
 
           <div class="events__header">
             <h4 class="events__headline">
-              <a href="">{{events.post1.subtitle}}</a>
+              <a href="" target="_blank">{{events.post1.subtitle}}</a>
             </h4>
             <p class="event__date">
               <svg class="events__svg" width="12" height="12" aria-label="Дата статьи">
@@ -22,7 +22,7 @@
             </p>
           </div>
           <div class="events__img">
-            <a href="" class="events__img-link">
+            <a href="" target="_blank" class="events__img-link">
               <img src="assets/img/{{events.post1.img}}" width="24" height="24" alt="">
             </a>
           </div>
@@ -43,7 +43,7 @@
         <li class="events__item">
 
           <div class="events__header">
-            <h4 class="events__trainer">Тренер: {{events.post2.trainer}}</h4>
+            <h4 class="events__trainer">Тренер: <span>{{events.post2.trainer}}</span></h4>
             <h5 class="events__pokemon">Покемон: <a href="">{{events.post2.pokemon}}</a></h5>
             <p class="event__date">
               <svg class="events__svg" width="12" height="12" aria-label="Дата статьи">
@@ -52,9 +52,9 @@
               {{events.post2.time}}
             </p>
           </div>
-          <div class="events__img">
+          <div class="events__img events__img--pokemon">
             <a href="" class="events__img-link">
-              <img src="assets/img/{{events.post2.img}}" width="32" height="30" alt="">
+              <img src="assets/img/{{events.post2.img}}" width="30" height="30" loading="lazy" alt="">
             </a>
           </div>
 

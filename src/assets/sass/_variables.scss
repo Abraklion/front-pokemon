@@ -47,4 +47,89 @@ $secondary: #EBA900;
 //$colorTextCopy: $primary; // цвет выделенного текста
 
 // Заблокировать копировать текста: none - запретить |  auto - разрешить
-//$blockText: none;
+$blockText: none;
+
+//==================================//=====================================================//
+// НАСТРОЙКА ЭЛЕМЕНТОВ // отдельные сушности которые встричаются во всем сайте //
+//==================================//=====================================================//
+
+// Кнопка
+$button-enter-bg: $primary; // фон кнопки
+$button-enter-color: #1E2229; // цвет тескта кнопки
+
+// Бургер
+$burger-border-color: #FFD25F; // цвет рамки мигающего круга
+
+// Меню
+$menu-link-color: $white; // цвет тескта
+
+// Модалки
+$bg-modal: #1E2229;
+$color-modal: $white;
+
+// Форма
+$bg-form: $secondary-bg; // цвет фона
+$bg-input: $white; // цвет фона input
+$color-input: #1E2229; // цвет текста input
+
+
+// Success
+$bg-success: #C0EEB8; // цвет фона
+$bg-border-success: #63935A; // цвет рамки
+$bg-color-success: $black; // цвет текста
+
+// Error
+$bg-error: #EEB8B8; // цвет фона
+$bg-border-error: #935A5A; // цвет рамки
+$bg-color-error: $black; // цвет текста
+
+// Inform
+$bg-inform: #B8D8EE; // цвет фона
+$bg-border-inform: #5A7493; // цвет рамки
+$bg-color-inform: $black; // цвет текста
+
+
+//==================================//=====================================================//
+// НАСТРОЙКА СТИЛЕЙ САЙТА ПО БЛОКАМ // если надо изменить локально однин определенный блок //
+//==================================//=====================================================//
+
+// Первый экран
+$color-subtitle: $secondary; // цвет текста "Онлайн игра про Покемонов"
+$color-title: $text-color; // цвет заголовка
+
+// Новости
+$bg-news: $secondary-bg; // цвет фона
+
+$color-title-news: $white; // цвет текста заголовка
+
+$bg-article: $black; $bg-article-opacity: 0.05; // цвет и прозрачность фона новости
+$color-article: $white; // цвет текста новости
+$border-article: $black; // цвет рамки
+$icon-color-article: $secondary; // цвет иконок
+
+// События
+$bg-event: $secondary-bg; // цвет фона
+$color-event: $white; // цвет текста событий
+$bg-heading: $primary; // цвет фона названия события
+$bg-event-icon: $secondary; // цвет иконок
+
+// Рейтинг
+$bg-rating: $secondary-bg; // цвет фона
+$color-rating: $white; // цвет текста ретинга
+$icon-color-red-rating: #F43E04; // цвет иконки ранг
+$icon-color-red-pokedex: #67CB19; // цвет иконки покедекс
+$icon-color-red-shainidex: #04BBF4; // цвет иконки шайнидекс
+$bg-line-rating: $black; // цвет линии
+
+// Социальные сети
+$bg-social: $secondary-bg; // цвет фона
+$color-social: $white; // цвет текста соц сети
+$bg-vkontakte: #0077FE; // фон в контакте
+$bg-discord: #586AEA; // фон в контакте
+$bg-telegram: #31A8DB; // фон в контакте
+
+// подвал
+$bg-footer: #262A32; // цвет фона
+$line-footer: #000000; // цвет линии
+$color-footer: $white; // цвет текста подвал
+

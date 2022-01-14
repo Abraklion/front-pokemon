@@ -1,0 +1,147 @@
+.article{
+
+  padding: 16px 15px;
+
+  background-color: rgba($bg-article,$bg-article-opacity);
+
+  border: 1px solid rgba($border-article,0.3);
+  border-radius: 4px;
+}
+
+.article__header{
+  margin: 12px 0 12px 0;
+}
+
+.article__title{
+  height: 24px;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0 15px;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+
+  color: $color-article;
+
+  text-align: center;
+
+  transition: height 0.4s ease;
+}
+
+.article__content__wrapper{
+  padding: 8px 0 13px 0;
+
+  border-top: 1px solid rgba($border-article,0.3);
+  border-bottom: 1px solid rgba($border-article,0.3);
+}
+
+.article__content{
+  height: 96px;
+  overflow: hidden;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+
+  color: rgba($color-article,0.8);
+
+  transition: height 0.4s ease;
+}
+
+.article__img{
+  width: 110px;
+  height: 125px;
+
+  position: relative;
+
+  padding: 0;
+  margin: 0 auto;
+
+  &::before{
+    content: "";
+
+    width: inherit;
+    height: inherit;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-image: url(../img/border-article.png);
+    background-position: center;
+    background-size: 110px 125px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/border-article@2x.png);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../img/border-article@3x.png);
+    }
+
+  }
+
+  img{
+    display: block;
+
+    width: 100px;
+    height: 110px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+  }
+}
+
+.article__footer{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 0 0 0;
+}
+
+.article__list{
+  @include list();
+
+  display: flex;
+
+  font-size: 12px;
+  line-height: 12px;
+
+  color: rgba($color-article,0.8);
+}
+
+.article__item{
+
+  &:first-child{
+    margin-right: 12px;
+  }
+}
+
+.article__item-svg{
+  margin: 0 4px -1px 0;
+
+  width: 12px;
+  height: 12px;
+
+  fill: $icon-color-article;
+}
+
+.article__button{
+
+  font-size: 14px;
+  line-height: 14px;
+
+  color: $color-article;
+
+  text-decoration: none;
+}
+

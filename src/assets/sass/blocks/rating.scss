@@ -1,0 +1,176 @@
+.rating{
+
+}
+
+.rating__inner{
+  padding: 32px 0 48px 0;
+}
+
+.rating__title{
+  margin: 0 0 32px 0;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+
+  text-align: center;
+}
+
+.rating__row{
+  @include list();
+
+  display: grid;
+  grid-row-gap: 24px;
+}
+
+.rating__column{
+  padding: 26px 12px 14px 12px;
+
+  background-color: $bg-rating;
+  background-image: url(../img/icon-rank.svg), url(../img/bg-secondary.jpg);
+  background-position: top 24px right 12px,0 0;
+  background-size: 21px 31px,64px 64px;
+  background-repeat: no-repeat,repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/icon-rank.svg), url(../img/bg-secondary@2x.jpg);
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url(../img/icon-rank.svg), url(../img/bg-secondary@3x.jpg);
+  }
+
+  &:nth-child(2){
+    background-image: url(../img/icon-pokedex.svg), url(../img/bg-secondary.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/icon-pokedex.svg), url(../img/bg-secondary@2x.jpg);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../img/icon-pokedex.svg), url(../img/bg-secondary@3x.jpg);
+    }
+
+    .rating__item-svg{
+      fill: $icon-color-red-pokedex;
+    }
+  }
+
+  &:nth-child(3){
+    background-image: url(../img/icon-shainidex.svg), url(../img/bg-secondary.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/icon-shainidex.svg), url(../img/bg-secondary@2x.jpg);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../img/icon-shainidex.svg), url(../img/bg-secondary@3x.jpg);
+    }
+
+    .rating__item-svg{
+      fill: $icon-color-red-shainidex;
+    }
+  }
+}
+
+.rating__heading{
+  margin: 0 0 25px 0;
+
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 28px;
+
+  color: $color-rating;
+}
+
+.rating__list{
+  @include list();
+}
+
+.rating__item{
+  position: relative;
+
+  padding: 18px 0;
+
+  line-height: 18px;
+
+  color: $color-rating;
+
+  &::before{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+
+    background-color: rgba($bg-line-rating,0.2);
+  }
+
+  &:nth-child(1){
+    &::before{
+      background-color: $bg-line-rating;
+    }
+
+    .rating__item-svg{
+      opacity: 1;
+    }
+  }
+
+  &:nth-child(2){
+    &::before{
+      background-color: rgba($bg-line-rating,0.8);
+    }
+
+    .rating__item-svg{
+      opacity: 0.8;
+    }
+  }
+
+  &:nth-child(3){
+    &::before{
+      background-color: rgba($bg-line-rating,0.6);
+    }
+
+    .rating__item-svg{
+      opacity: 0.6;
+    }
+  }
+
+  &:nth-child(4){
+    &::before{
+      background-color: rgba($bg-line-rating,0.4);
+    }
+
+    .rating__item-svg{
+      opacity: 0.4;
+    }
+  }
+
+  &:nth-child(5){
+    &::before{
+      background-color: rgba($bg-line-rating,0.2);
+    }
+  }
+}
+
+.rating__item-svg{
+  width: 18px;
+  height: 18px;
+
+  vertical-align: top;
+
+  margin-right: 10px;
+
+  fill: $icon-color-red-rating;
+
+  opacity: 0.3;
+}
+
+.rating__check{
+  float: right;
+}

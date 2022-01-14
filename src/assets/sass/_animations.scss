@@ -1,2 +1,21 @@
 
 //-----===== Анимация ====-----//
+
+@keyframes bgc-green {
+  0%{
+    background-color: #2F461D;
+  }
+  100% {
+    background-color: #51AD08;
+  }
+}
+
+@keyframes bgc-red {
+  0%{
+    background-color: #582424;
+  }
+  100% {
+    background-color: #D70404;
+  }
+}
+

@@ -1,0 +1,42 @@
+.menu{
+  @include list();
+
+  padding: 0 12px;
+
+  background-image: url(../img/bg-body.jpg);
+  background-position: 0 0;
+  background-size: 64px 64px;
+  background-repeat: repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bg-body@2x.jpg);
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url(../img/bg-body@3x.jpg);
+  }
+
+  overflow-y: auto;
+}
+
+.menu__item{
+  font-size: 20px;
+  line-height: 20px;
+
+  &:not(:last-child){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+.menu__link{
+  display: block;
+
+  padding: 22px 0;
+
+  color: $menu-link-color;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}

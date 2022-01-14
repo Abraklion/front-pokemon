@@ -1,5 +1,5 @@
 <section class="social">
-  <div class="container">
+  <div class="container container--fluid">
 
     <div class="social__inner">
 
@@ -10,11 +10,11 @@
         {{#each social.list}}
 
         <li class="social__item">
-          <a href="{{this.link}}" class="social__link">
+          <a href="{{this.link}}" target="_blank" class="social__link">
             <svg class="social__svg" width="34" height="34" aria-hidden="true">
               <use xlink:href="assets/img/sprite.svg#{{this.icon}}"/>
             </svg>
-            {{this.name}}
+            <span>{{this.name}}</span>
           </a>
         </li>
         {{/each}}

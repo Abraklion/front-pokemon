@@ -6,10 +6,10 @@
       <div class="footer__wrapper-logo">
 
         <a href="" class="footer__logo logo">
-          <img class="logo__img" src="assets/img/{{footer.logo}}" width="155" alt="Логотип OldPokemon">
+          <img class="logo__img" src="assets/img/{{footer.logo}}" width="155" loading="lazy" alt="Логотип OldPokemon">
         </a>
 
-        <p class="copyright">{{footer.copyright}}</p>
+        <p class="footer__copyright">{{footer.copyright}}</p>
 
       </div><!--/.footer__wrapper-logo-->
 
@@ -17,7 +17,7 @@
         {{#each footer.list}}
 
         <li class="footer__item">
-          <img src="assets/img/{{this.icon}}"  width="18" height="18" alt="">
+          <img src="assets/img/{{this.icon}}" width="18" height="18" loading="lazy" alt="">
           <a href="" class="footer__item-link">{{this.name}}</a>
         </li>
         {{/each}}

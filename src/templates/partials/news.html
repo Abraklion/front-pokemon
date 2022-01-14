@@ -3,23 +3,25 @@
   <h2 class="news__title">{{news.sectionTitle}}</h2>
 
   <ul class="news__list">
-    {{#repeat 5}}
+    {{#repeat 15}}
 
-    <li class="news__item">
+    <li class="news__item js-news__item">
 
       <article class="article">
+
+        <figure class="article__img">
+          <img src="assets/img/{{news.imgNews}}" width="100" height="110" loading="lazy" alt="">
+        </figure>
 
         <header class="article__header">
           <h3 class="article__title">{{news.titleNews}}</h3>
         </header>
 
-        <p class="article__content">{{news.descriptionNews}}</p>
+        <div class="article__content__wrapper">
+          <div class="article__content">{{news.descriptionNews}}</div>
+        </div>
 
-        <figure class="article__img">
-          <img src="assets/img/{{news.imgNews}}" alt="">
-        </figure>
-
-        <footer class="article__header">
+        <footer class="article__footer">
           <ul class="article__list">
             <li class="article__item">
               <svg class="article__item-svg" width="12" height="12" aria-label="Автор">
@@ -34,7 +36,7 @@
               {{news.dateNews}}
             </li>
           </ul>
-          <a href="" class="article__button button">{{news.more}}</a>
+          <a href="" class="article__button js-full_article">{{news.more}}</a>
         </footer>
 
       </article><!--/.article-->
@@ -43,5 +45,7 @@
     {{/repeat}}
 
   </ul><!--/.news__list-->
+
+  <button class="news__button button js-news__button" type="button">Старые новости</button>
 
 </section><!--/.news-->

@@ -4,16 +4,16 @@
     <div class="header__inner">
 
       <a href="" class="header__logo logo">
-        <img class="logo__img" src="assets/img/{{header.logo}}" width="48" height="38" alt="Логотип OldPokemon">
+        <img class="logo__img" src="assets/img/{{header.logo}}" width="50" height="38" alt="Логотип OldPokemon">
       </a><!--/.logo-->
 
       <nav class="header__navigation">
 
-        <button class="header__burger burger js-burger" type="button">
+        <button class="header__burger js-burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button><!--/.burger-->
 
-        <ul class="header__menu menu">
+        <ul class="header__menu menu js-menu">
           {{#each header.menu}}
             <li class="menu__item">
               <a href="" class="menu__link">{{ this.item }}</a>
@@ -23,7 +23,7 @@
 
       </nav><!--/.header__navigation-->
 
-      <a href="" class="header__button button">{{header.buttonText}}</a>
+      <a href="" class="header__button button js-enterBtn">{{header.buttonText}}</a>
 
     </div><!--/.header__inner-->
 

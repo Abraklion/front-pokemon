@@ -1,4 +1,4 @@
-<section class="modal">
+<section class="modal js-registration">
   <div class="container">
 
     <div class="modal__inner">
@@ -7,18 +7,19 @@
 
       <form class="modal__form form" action="/" method="POST">
 
+
         <div class="form__element">
           <label class="form__name" for="name">Имя тренера</label>
-          <input class="form__input" id="name" type="text" name="name" minlength="3" maxlength="20" placeholder="Логин может состоять только из букв" required>
+          <input class="form__input" id="name" type="text" name="name" minlength="3" maxlength="20" placeholder="Логин может состоять только из букв" autocomplete="off" required>
         </div>
 
         <div class="form__element">
           <label class="form__name" for="male">Пол</label>
           <div class="form__radio-inner">
+            <input class="form__radio visually-hidden" id="male" type="radio" name="floor" checked>
             <label class="form__floor" for="male">Мужской</label>
-            <input class="form__input" id="male" type="radio" name="floor" checked>
+            <input class="form__radio visually-hidden" id="female" type="radio" name="floor">
             <label class="form__floor" for="female">Женский</label>
-            <input class="form__input" id="female" type="radio" name="floor">
           </div>
         </div>
 
@@ -34,20 +35,20 @@
 
         <div class="form__element">
           <label class="form__name" for="email">Почта</label>
-          <input class="form__input" id="email" type="email" name="repeat-password" minlength="3" maxlength="30" placeholder="Адрес вашей электронной почты" required>
+          <input class="form__input" id="email" type="email" name="repeat-password" minlength="3" maxlength="30" placeholder="Адрес вашей электронной почты" autocomplete="off" required>
         </div>
 
         <div class="form__element">
           <div class="form__checkbox-inner">
-            <label class="form__floor" for="regulations">Я принимаю пользовательское соглашение, политику конфиденциальности.</label>
-            <input class="form__input" id="regulations" type="checkbox" name="regulations" checked required>
+            <input class="form__checkbox visually-hidden" id="regulations" type="checkbox" name="regulations" checked required>
+            <label class="form__regulations" for="regulations">Я принимаю пользовательское соглашение, политику конфиденциальности.</label>
           </div>
           <button class="form__button button" type="submit" name="btn-reg">Создать персонажа</button>
         </div>
 
       </form><!--/.form-->
 
-      <button class="modal__button button js-close" type="button">
+      <button class="modal__button js-close" type="button">
         <span class="visually-hidden">Закрыть окно регистрации</span>
       </button>
 

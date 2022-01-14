@@ -1,0 +1,117 @@
+.social{
+  padding: 16px 12px;
+
+  background-color: $bg-social;
+  background-image: url(../img/bg-secondary.jpg);
+  background-position: 0 0;
+  background-size: 64px 64px;
+  background-repeat: repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bg-secondary@2x.jpg);
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url(../img/bg-secondary@3x.jpg);
+  }
+}
+
+.social__inner{
+  display: grid;
+
+  background-image: url(../img/bg-info.png);
+  background-position: 0 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bg-info@2x.png);
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url(../img/bg-info@3x.png);
+  }
+
+  color: $color-social;
+}
+
+.social__title{
+  padding: 0 15px;
+  margin: 16px 0;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+
+  text-align: center;
+}
+
+.social__subtitle{
+  margin: 0 0 24px 0;
+
+  font-size: 15px;
+  line-height: 22px;
+
+  text-align: center;
+
+  color: rgba($color-social, 0.8);
+}
+
+.social__list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include list();
+
+  margin-bottom: 26px;
+}
+
+.social__item{
+  min-width: 168px;
+
+  background-color: $bg-vkontakte;
+
+  border-radius: 4px;
+
+  &:not(:last-child){
+    margin: 0 0 16px 0;
+  }
+
+  &:nth-child(2){
+    background-color: $bg-discord;
+  }
+
+  &:nth-child(3){
+    background-color: $bg-telegram;
+  }
+}
+
+.social__link{
+  display: block;
+
+  padding: 10px 0 10px 26px;
+
+  font-size: 14px;
+  line-height: 14px;
+
+  color: $color-social;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  span{
+    vertical-align: middle;
+  }
+}
+
+.social__svg{
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+
+  margin: 0 15px 0 0;
+
+  fill: currentColor;
+}
+

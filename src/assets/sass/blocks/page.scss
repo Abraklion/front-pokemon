@@ -1,0 +1,37 @@
+.page{
+  height: 100%;
+}
+
+.page__body{
+  height: inherit;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-columns: 1fr;
+  align-content: start;
+
+  background-image: url(../img/bg-body.jpg);
+  background-position: 0 0;
+  background-size: 64px 64px;
+  background-repeat: repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bg-body@2x.jpg);
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url(../img/bg-body@3x.jpg);
+  }
+
+  &--overflow{
+    overflow: hidden;
+  }
+}
+
+.page__content{
+
+}
+
+.page__inner{
+
+}

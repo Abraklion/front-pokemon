@@ -1,0 +1,103 @@
+.success, .error, .inform{
+  @include list();
+
+  margin: 0 0 16px 0;
+  padding: 16px;
+
+  border-radius: 4px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+
+  opacity: 1;
+
+  transition: opacity 0.3s ease;
+
+  &--mb4{
+    margin-bottom: 4px;
+  }
+
+  &--mb8{
+    margin-bottom: 8px;
+  }
+
+  &--mb12{
+    margin-bottom: 12px;
+  }
+
+  &--mb24{
+    margin-bottom: 24px;
+  }
+
+  ul{
+    @include list();
+  }
+
+  li{
+    margin: 4px 0;
+  }
+
+  p{
+    margin: 4px 0;
+  }
+}
+
+.success{
+  background-color: $bg-success;
+
+  border: 2px solid $bg-border-success;
+
+  color: $bg-color-success;
+
+  &--img{
+    padding-left: 48px;
+
+    background-image: url(../img/icon-success.svg);
+    background-position: 13px center;
+    background-size: 22px;
+    background-repeat: no-repeat;
+  }
+}
+
+.error{
+  background-color: $bg-error;
+
+  border: 2px solid $bg-border-error;
+
+  color: $bg-color-error;
+
+  &--img{
+    padding-left: 48px;
+
+    background-image: url(../img/icon-error.svg);
+    background-position: 13px center;
+    background-size: 22px;
+    background-repeat: no-repeat;
+  }
+}
+
+.inform{
+  background-color: $bg-inform;
+
+  border: 2px solid $bg-border-inform;
+
+  color: $bg-color-error;
+
+  &--img{
+    padding-left: 48px;
+
+    background-image: url(../img/icon-inform.svg);
+    background-position: 13px center;
+    background-size: 22px;
+    background-repeat: no-repeat;
+  }
+}
+
+.answer{
+
+  &--hide{
+    opacity: 0;
+  }
+
+}

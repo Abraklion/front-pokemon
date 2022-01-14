@@ -1,0 +1,183 @@
+.events{
+  padding: 32px 12px;
+  margin: 18px 0 0 0;
+
+  background-color: $bg-event;
+  background-image: url(../img/bg-secondary.jpg);
+  background-position: 0 0;
+  background-size: 64px 64px;
+  background-repeat: repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bg-secondary@2x.jpg);
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url(../img/bg-secondary@3x.jpg);
+  }
+}
+
+.events__title{
+  display: none;
+}
+
+.events__grid{
+  @include list();
+}
+
+.events__row{
+  &:not(:last-child){
+    margin: 0 0 32px 0;
+  }
+}
+
+.events__heading{
+  margin: 0 0 18px 0;
+  padding: 8px;
+
+  background-color: rgba($bg-heading,0.13);
+
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $color-event;
+}
+
+.events__list{
+  @include list();
+}
+
+.events__item{
+  display: grid;
+  grid-template-columns: 63px 1fr;
+  align-content: start;
+  grid-column-gap: 14px;
+
+  &:not(:last-child){
+    margin: 0 0 18px 0;
+  }
+
+}
+
+.events__header{
+  order: 2;
+  align-self: center;
+}
+
+.events__headline{
+  margin: -4px 0 9px 0;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+
+  max-height: 42px;
+  overflow: hidden;
+
+  a{
+    color: $color-event;
+
+    text-decoration: none;
+  }
+}
+
+.event__date{
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 12px;
+
+  color: rgba($color-event,0.8);
+}
+
+.events__svg{
+  width: 12px;
+  height: 12px;
+
+  margin-bottom: -1px;
+
+  fill: $bg-event-icon;
+}
+
+.events__img{
+  order: 1;
+
+  min-height: 73px;
+
+  background-image: url("../img/bg-icons-game.svg");
+  background-position: center;
+  background-size: 63px 73px;
+  background-repeat: no-repeat;
+
+  &--pokemon{
+
+    .events__img-link{
+
+      img{
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+  }
+}
+
+.events__img-link{
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  line-height: 0;
+
+  text-decoration: none;
+
+  img{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+  }
+}
+
+.events__trainer{
+  margin: -4px 0 8px 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $color-event;
+
+  span{
+    color: rgba($color-event,0.8);
+  }
+}
+
+.events__pokemon{
+  margin: 0 0 12px 0;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+
+  a{
+    color: rgba($color-event,0.8);
+
+    text-decoration: none;
+  }
+}
