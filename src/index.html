@@ -8,34 +8,42 @@ link: style.min.css
 script: app.min.js
 ---
 
+<!-- Шапка -->
 {{> header}}
 
 <main class="page__content">
 
   <h1 class="visually-hidden">OldPokemon - браузерная онлайн игра про Покемонов</h1>
 
+  <!-- Первый экран -->
   {{> info}}
 
   <div class="container container--fluid">
 
     <div class="page__inner">
 
+      <!-- Новости -->
       {{> news}}
 
+      <!-- События -->
       {{> events}}
 
     </div>
 
   </div>
 
+  <!-- Рейтинг -->
   {{> rating}}
 
+  <!-- Предложения -->
   {{> offer}}
 
+  <!-- Социальные сети -->
   {{> social}}
 
 </main>
 
+<!-- Подвал -->
 {{> footer}}
 
 <!-- Модальное окно регистрации -->

@@ -10,6 +10,7 @@
   position: relative;
 
   padding: 18px 0;
+
 }
 
 .header__logo{
@@ -17,6 +18,14 @@
 
   width: 57.8px;
   height: 44px;
+
+  @media (min-width: $viewport-sm) {
+    width: 80.8px;
+    height: 48px;
+
+    position: relative;
+    top: 1px;
+  }
 }
 
 .header__navigation{
@@ -95,6 +104,12 @@
   transform: translateX(-50%);
   transition: all 0.2s ease;
 
+  @media (min-width: $viewport-sm) {
+    top: 84px;
+
+    height: calc(100vh - 84px);
+  }
+
   &--active{
     visibility: visible;
     opacity: 1;
@@ -106,4 +121,8 @@
   margin-left: -7px;
 
   order: 2;
+
+  @media (min-width: $viewport-sm) {
+    margin-left: -32px;
+  }
 }

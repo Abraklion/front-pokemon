@@ -2,11 +2,23 @@
   margin: 48px 0 0 0;
 
   background-color: $bg-footer;
+
+  @media (min-width: $viewport-sm) {
+    margin-top: 64px;
+  }
 }
 
 .footer__inner{
   display: grid;
   grid-row-gap: 24px;
+
+  @media (min-width: $viewport-sm) {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 32px 0;
+  }
 }
 
 .footer__wrapper-logo{
@@ -18,6 +30,12 @@
   height: 48px;
 
   order: 2;
+
+  @media (min-width: $viewport-sm) {
+    order: 0;
+
+    margin: 0;
+  }
 }
 
 .footer__logo{
@@ -50,6 +68,12 @@
   align-items: center;
 
   border-bottom: 1px solid rgba($line-footer,0.2);
+
+  @media (min-width: $viewport-sm) {
+    padding: 0;
+
+    border: none;
+  }
 }
 
 .footer__item{

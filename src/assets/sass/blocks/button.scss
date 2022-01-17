@@ -25,4 +25,12 @@
   user-select: $blockText;
 
   cursor: pointer;
+
+  &:focus{
+    outline-width: 0;
+  }
+
+  @media (min-width: $viewport-sm) {
+    padding: 14.5px 22px;
+  }
 }

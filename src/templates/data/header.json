@@ -1,5 +1,6 @@
 {
   "logo": "icon-logo.svg",
+  "logo-sm": "icon-logo-sm.svg",
 
   "menu" : [
     {

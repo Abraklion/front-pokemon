@@ -6,15 +6,19 @@ try {
 
   /* ============ События =============*/
 
+  // проходимся по всем ответам в цикле
   answer.forEach(function (element) {
 
+    // каждому ответу назначаем события клик
     element.addEventListener("click", function (evt) {
 
       // отменяем событие по умолчанию
       evt.preventDefault();
 
-      this.classList.add("answer--hide");
+      // даем клас hide
+      this.classList.add("hide");
 
+      // удаляем ответ через 300 милисекунд
       setTimeout(() => this.remove(),300);
 
     })

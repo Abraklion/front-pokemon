@@ -22,6 +22,52 @@
     background-image: linear-gradient(0deg,$primary-bg,transparent),url(../img/bg-info@3x.png);
   }
 
+  @media (min-width: 393px) {
+    min-height: 540px;
+
+    padding-top: 85px;
+
+    background-position: 0 bottom, 0 8px;
+  }
+
+  @media (min-width: 411px) {
+    padding-top: 92px;
+
+    background-image: linear-gradient(0deg,$primary-bg 7px,transparent),url(../img/bg-info.png);
+
+    background-position: 0 bottom, 0 12px;
+    background-size: 100% 10px, 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(0deg,$primary-bg 7px,transparent),url(../img/bg-info@2x.png);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: linear-gradient(0deg,$primary-bg 7px,transparent),url(../img/bg-info@3x.png);
+    }
+
+  }
+
+  @media (min-width: $viewport-sm) {
+    min-height: 536px;
+
+    padding-top: 102px;
+
+    background-image: url(../img/bg-info-sm.png);
+
+    background-position: 0 10px;
+    background-size: 100% auto;
+    background-repeat: no-repeat repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-info-sm@2x.png);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../img/bg-info-sm@3x.png);
+    }
+  }
+
   &--charizard{
 
     &::before{
@@ -46,6 +92,44 @@
       @media (min-resolution: 3dppx) {
         background-image: url(../img/bg-charizard-xs@3x.png);
       }
+
+      @media (min-width: 393px) {
+        width: 190px;
+        height: 195px;
+
+        top: 73px;
+
+        background-image: url(../img/bg-charizard-393-xs.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-charizard-393-xs@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-charizard-393-xs@3x.png);
+        }
+      }
+
+      @media (min-width: 411px) {
+        top: 80px;
+      }
+
+      @media (min-width: $viewport-sm) {
+        width: 281px;
+        height: 283px;
+
+        top: 90px;
+
+        background-image: url(../img/bg-charizard-sm.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-charizard-sm@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-charizard-sm@3x.png);
+        }
+      }
     }
   }
 }
@@ -61,6 +145,16 @@
   line-height: 15px;
 
   color: $color-subtitle;
+
+  @media (min-width: 393px) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $viewport-sm) {
+    margin-bottom: 20px;
+
+    font-size: 15px;
+  }
 }
 
 .info__title{
@@ -73,6 +167,24 @@
   line-height: 42px;
 
   color: $color-title;
+
+  @media (min-width: 393px) {
+    max-width: 193px;
+
+    margin-bottom: 48px;
+
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+  @media (min-width: $viewport-sm) {
+    max-width: 205px;
+
+    margin-bottom: 16px;
+
+    font-size: 36px;
+    line-height: 48px;
+  }
 
   span{
     display: none;
@@ -88,6 +200,12 @@
 
   color: rgba($color-title, 0.9);
 
+  @media (min-width: $viewport-sm) {
+    max-width: 248px;
+
+    margin-bottom: 26px;
+  }
+
   span{
     display: none;
   }
@@ -102,12 +220,43 @@
 
   font-size: 15px;
   line-height: 15px;
+
+  @media (min-width: $viewport-sm) {
+    flex-direction: column;
+
+    width: 245px;
+
+    position: absolute;
+    right: 0;
+    bottom: 93px;
+
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .info__count-item{
 
+  @media (min-width: $viewport-sm) {
+    margin-bottom: 6px;
+  }
+
   &:first-child{
     margin-right: 24px;
+
+    @media (min-width: $viewport-sm) {
+      margin-right: 0;
+    }
+  }
+
+  &:last-child{
+
+    @media (min-width: $viewport-sm) {
+      margin-left: 110px;
+    }
+
   }
 
 }

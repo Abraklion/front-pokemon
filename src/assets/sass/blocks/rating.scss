@@ -4,6 +4,10 @@
 
 .rating__inner{
   padding: 32px 0 48px 0;
+
+  @media (min-width: $viewport-sm) {
+    padding: 40px 0 64px 0;
+  }
 }
 
 .rating__title{
@@ -14,6 +18,11 @@
   line-height: 36px;
 
   text-align: center;
+
+  @media (min-width: $viewport-sm) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .rating__row{
@@ -38,6 +47,14 @@
 
   @media (min-resolution: 3dppx) {
     background-image: url(../img/icon-rank.svg), url(../img/bg-secondary@3x.jpg);
+  }
+
+  @media (min-width: $viewport-sm) {
+    padding: 28px 16px 18px 16px;
+
+    background-position: top 27px right 12px,0 0;
+
+    border-radius: 8px;
   }
 
   &:nth-child(2){

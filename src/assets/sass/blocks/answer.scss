@@ -14,6 +14,10 @@
 
   transition: opacity 0.3s ease;
 
+  &.hide{
+    opacity: 0;
+  }
+
   &--mb4{
     margin-bottom: 4px;
   }
@@ -92,12 +96,4 @@
     background-size: 22px;
     background-repeat: no-repeat;
   }
-}
-
-.answer{
-
-  &--hide{
-    opacity: 0;
-  }
-
 }

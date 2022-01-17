@@ -15,6 +15,12 @@
   @media (min-resolution: 3dppx) {
     background-image: url(../img/bg-secondary@3x.jpg);
   }
+
+  @media (min-width: $viewport-sm) {
+    padding: 32px 16px 37px 16px;
+
+    border-radius: 8px 8px 0 0;
+  }
 }
 
 .news__title{
@@ -28,6 +34,15 @@
 
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $viewport-sm) {
+    margin-left: 9px;
+
+    font-size: 32px;
+    line-height: 36px;
+
+    text-align: left;
+  }
 }
 
 .news__list{
@@ -42,6 +57,10 @@
   opacity: 0;
 
   transition: all 0.3s ease;
+
+  @media (min-width: $viewport-sm) {
+    margin-bottom: 24px;
+  }
 
   &--show{
     display: block;

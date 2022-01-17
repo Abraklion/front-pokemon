@@ -4,7 +4,10 @@
     <div class="header__inner">
 
       <a href="" class="header__logo logo">
-        <img class="logo__img" src="assets/img/{{header.logo}}" width="50" height="38" alt="Логотип OldPokemon">
+        <picture>
+          <source media="(min-width: 576px)" srcset="assets/img/{{header.logo-sm}}" type="image/svg+xml">
+          <img class="logo__img" src="assets/img/{{header.logo}}" width="50" height="38" alt="Логотип OldPokemon">
+        </picture>
       </a><!--/.logo-->
 
       <nav class="header__navigation">

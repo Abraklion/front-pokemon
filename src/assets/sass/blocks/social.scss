@@ -14,6 +14,13 @@
   @media (min-resolution: 3dppx) {
     background-image: url(../img/bg-secondary@3x.jpg);
   }
+
+  @media (min-width: $viewport-sm) {
+    padding: 0;
+
+    background-color: transparent;
+    background-image: none;
+  }
 }
 
 .social__inner{
@@ -24,6 +31,8 @@
   background-size: 100% auto;
   background-repeat: no-repeat repeat;
 
+  color: $color-social;
+
   @media (min-resolution: 2dppx) {
     background-image: url(../img/bg-info@2x.png);
   }
@@ -32,7 +41,25 @@
     background-image: url(../img/bg-info@3x.png);
   }
 
-  color: $color-social;
+  @media (min-width: $viewport-sm) {
+    padding: 20px 25px;
+
+    background-color: $bg-social;
+    background-image: url(../img/bg-social-sm.png), url(../img/bg-secondary.jpg);
+    background-position: 25px 20px,0 0;
+    background-size: 468px 227px,64px 64px;
+    background-repeat: no-repeat,repeat;
+
+    border-radius: 8px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-social-sm@2x.png), url(../img/bg-secondary@2x.jpg);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../img/bg-social-sm@3x.png), url(../img/bg-secondary@3x.jpg);
+    }
+  }
 }
 
 .social__title{
@@ -44,6 +71,14 @@
   line-height: 38px;
 
   text-align: center;
+
+  @media (min-width: $viewport-sm) {
+    padding: 0 5px;
+    margin: 18px 0 24px 0;
+
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 .social__subtitle{
@@ -55,6 +90,14 @@
   text-align: center;
 
   color: rgba($color-social, 0.8);
+
+  @media (min-width: $viewport-sm) {
+    margin-bottom: 32px;
+    padding: 0 5px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .social__list{
@@ -65,6 +108,13 @@
   @include list();
 
   margin-bottom: 26px;
+
+  @media (min-width: $viewport-sm) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 42px;
+  }
 }
 
 .social__item{
@@ -74,8 +124,19 @@
 
   border-radius: 4px;
 
+  @media (min-width: $viewport-sm) {
+    min-width: auto;
+
+    flex: 1 1 auto;
+  }
+
   &:not(:last-child){
     margin: 0 0 16px 0;
+
+    @media (min-width: $viewport-sm) {
+      margin-bottom: 0;
+      margin-right: 18px;
+    }
   }
 
   &:nth-child(2){
@@ -99,6 +160,10 @@
 
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $viewport-sm) {
+    padding: 10px 5px 10px 16px;
+  }
 
   span{
     vertical-align: middle;

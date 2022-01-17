@@ -20,8 +20,18 @@ full_article.forEach(function (element) {
     // находим блок описания
     let article__content = parent.querySelector(".article__content");
 
+    // ширина окна (без учета полосы прокрутки)
+    let viewportScreen  = document.documentElement.clientWidth;
+
     // если текст элемента по которомы произашел клик равен "подробнее"
     if(this.innerText === "подробнее"){
+
+      // добывляем свойство overflow = "visible" если ширина экрана больше или равна 576
+      if(viewportScreen >= 576){
+        parent.classList.add("article--active");
+
+        article__content.style.overflow = "visible";
+      }
 
       article__title.style.height = article__title.scrollHeight + "px";
       article__content.style.height = article__content.scrollHeight + "px";
@@ -30,6 +40,13 @@ full_article.forEach(function (element) {
     }
     // если текст элемента по которомы произашел клик не равен "подробнее"
     else{
+
+      // проверяем существует ли у него класс "article--active"
+      if(parent.classList.contains("article--active")){
+
+        parent.classList.remove("article--active");
+
+      }
 
       article__title.removeAttribute("style");
       article__content.removeAttribute("style");
