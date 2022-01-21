@@ -8,6 +8,14 @@
   @media (min-width: $viewport-sm) {
     padding: 40px 0 64px 0;
   }
+
+  @media (min-width: $viewport-md) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    padding: 64px 0 96px 0;
+  }
 }
 
 .rating__title{
@@ -19,9 +27,25 @@
 
   text-align: center;
 
+  user-select: $blockText;
+
   @media (min-width: $viewport-sm) {
     font-size: 36px;
     line-height: 42px;
+  }
+
+  @media (min-width: $viewport-md) {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    margin-bottom: 48px;
+
+    font-size: 44px;
+    line-height: 50px;
+
+    text-align: left;
   }
 }
 
@@ -30,6 +54,15 @@
 
   display: grid;
   grid-row-gap: 24px;
+
+  @media (min-width: $viewport-md) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .rating__column{
@@ -57,6 +90,34 @@
     border-radius: 8px;
   }
 
+  @media (min-width: $viewport-md) {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    background-position: top 24px right 24px,0 0;
+  }
+
+  @media (min-width: $viewport-lg) {
+    padding: 26px 24px 18px 24px;
+  }
+
+  &:nth-child(1){
+    @media (min-width: $viewport-md) and (max-width: $viewport-lg - 1px) {
+      grid-column: 1 / span 2;
+
+      border-radius: 8px 8px 0 0;
+    }
+
+    .rating__item{
+      @media (min-width: $viewport-md) and (max-width: $viewport-lg - 1px) {
+        font-size: 18px;
+        line-height: 18px;
+
+        padding: 20px 0;
+      }
+    }
+  }
+
   &:nth-child(2){
     background-image: url(../img/icon-pokedex.svg), url(../img/bg-secondary.jpg);
 
@@ -66,6 +127,14 @@
 
     @media (min-resolution: 3dppx) {
       background-image: url(../img/icon-pokedex.svg), url(../img/bg-secondary@3x.jpg);
+    }
+
+    @media (min-width: $viewport-md) {
+      border-radius: 0 0 0 8px;
+    }
+
+    @media (min-width: $viewport-lg) {
+      border-radius: 8px;
     }
 
     .rating__item-svg{
@@ -84,6 +153,14 @@
       background-image: url(../img/icon-shainidex.svg), url(../img/bg-secondary@3x.jpg);
     }
 
+    @media (min-width: $viewport-md) {
+      border-radius: 0 0 8px 0;
+    }
+
+    @media (min-width: $viewport-lg) {
+      border-radius: 8px;
+    }
+
     .rating__item-svg{
       fill: $icon-color-red-shainidex;
     }
@@ -98,6 +175,13 @@
   line-height: 28px;
 
   color: $color-rating;
+
+  @media (min-width: $viewport-md) {
+    margin-bottom: 30px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .rating__list{

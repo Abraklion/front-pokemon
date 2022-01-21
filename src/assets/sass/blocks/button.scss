@@ -33,4 +33,42 @@
   @media (min-width: $viewport-sm) {
     padding: 14.5px 22px;
   }
+
+  @media (min-width: $viewport-lg) {
+    padding: 15px 25px;
+
+    cursor: pointer;
+
+    box-shadow: none;
+
+    transition: background-color 0.25s ease , box-shadow 0.25s ease;
+
+    &:hover{
+      background-color: $secondary;
+      box-shadow: inset 0 0 8px 0 $secondary, inset 0 0 10px 8px $primary;
+    }
+
+    &:active{
+      background-color: $secondary;
+      box-shadow: inset 0 0 8px 0 $secondary, inset 0 0 5px 8px $secondary;
+    }
+
+    &:focus{
+      outline-width: 1px;
+    }
+
+  }
+
+  &--offer{
+
+    @media (min-width: $viewport-lg) {
+      padding: 22px 5px;
+
+      font-size: 14px;
+      line-height: 14px;
+
+      text-align: center;
+    }
+
+  }
 }

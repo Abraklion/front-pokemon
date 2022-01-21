@@ -11,6 +11,10 @@
 
   padding: 18px 0;
 
+  @media (min-width: $viewport-lg) {
+    padding: 20px 0;
+  }
+
 }
 
 .header__logo{
@@ -26,10 +30,21 @@
     position: relative;
     top: 1px;
   }
+
+  @media (min-width: $viewport-lg) {
+    width: auto;
+    height: 54px;
+  }
 }
 
 .header__navigation{
   order: 3;
+
+  @media (min-width: $viewport-md) {
+    order: 2;
+
+    margin-bottom: -3px;
+  }
 }
 
 .header__burger{
@@ -53,6 +68,10 @@
   text-decoration: none;
 
   cursor: pointer;
+
+  @media (min-width: $viewport-md) {
+    display: none;
+  }
 
   &::before{
     content: "";
@@ -110,6 +129,19 @@
     height: calc(100vh - 84px);
   }
 
+  @media (min-width: $viewport-md) {
+    width: auto;
+    height: auto;
+
+    position: static;
+
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+
+    transform: translateX(0);
+  }
+
   &--active{
     visibility: visible;
     opacity: 1;
@@ -124,5 +156,11 @@
 
   @media (min-width: $viewport-sm) {
     margin-left: -32px;
+  }
+
+  @media (min-width: $viewport-md) {
+    order: 3;
+
+    margin-left: 0;
   }
 }

@@ -8,6 +8,10 @@
   background-size: 64px 64px;
   background-repeat: repeat;
 
+  overflow-y: auto;
+
+  user-select: $blockText;
+
   @media (min-resolution: 2dppx) {
     background-image: url(../img/bg-body@2x.jpg);
   }
@@ -16,15 +20,41 @@
     background-image: url(../img/bg-body@3x.jpg);
   }
 
-  overflow-y: auto;
+  @media (min-width: $viewport-md) {
+    display: flex;
+
+    overflow-y: visible;
+
+    padding: 0;
+  }
 }
 
 .menu__item{
   font-size: 20px;
   line-height: 20px;
 
+  @media (min-width: $viewport-md) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    font-size: 17px;
+    line-height: 18px;
+  }
+
   &:not(:last-child){
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+    @media (min-width: $viewport-md) {
+      border-bottom: none;
+
+      margin-right: 24px;
+    }
+
+    @media (min-width: $viewport-lg) {
+      margin-right: 32px;
+    }
   }
 }
 
@@ -38,5 +68,28 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $viewport-md) {
+    padding: 0;
+  }
+
+  @media (min-width: $viewport-lg) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition: color 0.25s ease 0.15s, transform 0.25s ease, opacity 0.25s ease;
+
+    &:hover{
+      color: $primary;
+
+      transform: translateY(-3px);
+    }
+
+    &:active{
+      opacity: 0.6;
+    }
+  }
 
 }

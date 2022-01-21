@@ -1,5 +1,5 @@
 .info{
-
+  user-select: $blockText;
 }
 
 .info__inner{
@@ -68,6 +68,73 @@
     }
   }
 
+  @media (min-width: $viewport-md) {
+    min-height: 566px;
+
+    padding-top: 75px;
+
+    background-image: none;
+  }
+
+  @media (min-width: $viewport-lg) {
+    min-height: 806px;
+
+    height: calc(100vh - 94px);
+
+    padding-top: 0;
+  }
+
+  &::after{
+
+    @media (min-width: $viewport-md) {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 298px;
+      z-index: -1;
+
+      width: 100vw;
+      height: 100%;
+
+      background-image: url(../img/bg-info-md.png);
+      background-position: 0 0;
+      background-size: 193px 194px;
+      background-repeat: repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/bg-info-md@2x.png);
+      }
+
+      @media (min-resolution: 3dppx) {
+        background-image: url(../img/bg-info-md@3x.png);
+      }
+    }
+
+    @media (min-width: $viewport-lg) {
+      height: 100.67%;
+
+      left: 395px;
+
+      background-image: url(../img/bg-info-lg.png);
+      background-size: 228px 232px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/bg-info-lg@2x.png);
+      }
+
+      @media (min-resolution: 3dppx) {
+        background-image: url(../img/bg-info-lg@3x.png);
+      }
+    }
+
+    @media (min-width: $viewport-lg) and (min-height: 937px) {
+      top: 15px;
+
+      height: 95%;
+    }
+  }
+
   &--charizard{
 
     &::before{
@@ -130,11 +197,135 @@
           background-image: url(../img/bg-charizard-sm@3x.png);
         }
       }
+
+      @media (min-width: $viewport-md) {
+        width: 336px;
+        height: 381px;
+
+        top: 80px;
+
+        background-image: url(../img/bg-charizard-md.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-charizard-md@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-charizard-md@3x.png);
+        }
+      }
+
+      @media (min-width: $viewport-lg) {
+        width: 496px;
+        height: 541px;
+
+        top: 50%;
+
+        transform: translateY(-53%);
+
+        background-image: url(../img/bg-charizard-lg.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-charizard-lg@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-charizard-lg@3x.png);
+        }
+      }
     }
   }
 }
 
 .info__wrapper-text{
+
+  @media (min-width: $viewport-md) {
+    max-width: 356px;
+
+    position: relative;
+    z-index: 1;
+
+  }
+
+  @media (min-width: $viewport-lg) {
+    max-width: 457px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-59%);
+  }
+
+  &::before{
+
+    @media (min-width: $viewport-md) {
+      content: "";
+
+      width: 390px;
+      height: 390px;
+
+      position: absolute;
+
+      top: -80px;
+      left: -122px;
+
+      background-image: radial-gradient(205px at center center,  rgba(#FFC83D,0.1), rgba(#CF644D,0));
+
+      pointer-events: none;
+    }
+
+    @media (min-width: $viewport-lg) {
+      width: 480px;
+      height: 480px;
+
+      top: -100px;
+      left: -132px;
+
+      background-image: radial-gradient(245px at center center,  rgba(#FFC83D,0.1), rgba(#CF644D,0));
+    }
+
+  }
+
+  &::after{
+
+    @media (min-width: $viewport-md) {
+      content: "";
+
+      width: 194px;
+      height: 87%;
+
+      position: absolute;
+      right: 10px;
+      top: 0;
+      z-index: -1;
+
+      border-radius: 0 100% 100% 0;
+
+      background-color: $bg-info;
+      background-image: url(../img/bg-body.jpg);
+      background-position: 0 0;
+      background-size: 64px 64px;
+      background-repeat: repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/bg-body@2x.jpg);
+      }
+
+      @media (min-resolution: 3dppx) {
+        background-image: url(../img/bg-body@3x.jpg);
+      }
+
+    }
+
+    @media (min-width: $viewport-lg) {
+      height: 68%;
+
+      top: 19px;
+      right: -10px;
+    }
+
+  }
 
 }
 
@@ -154,6 +345,19 @@
     margin-bottom: 20px;
 
     font-size: 15px;
+  }
+
+  @media (min-width: $viewport-md) {
+    margin-bottom: 24px;
+
+    line-height: 24px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    margin-bottom: 32px;
+
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -186,8 +390,27 @@
     line-height: 48px;
   }
 
+  @media (min-width: $viewport-md) {
+    max-width: none;
+
+    margin-bottom: 24px;
+
+    line-height: 50px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    margin-bottom: 32px;
+
+    font-size: 50px;
+    line-height: 62px;
+  }
+
   span{
     display: none;
+
+    @media (min-width: $viewport-md) {
+      display: inline;
+    }
   }
 }
 
@@ -206,8 +429,27 @@
     margin-bottom: 26px;
   }
 
+  @media (min-width: $viewport-md) {
+    max-width: 331px;
+
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    max-width: 435px;
+
+    margin-bottom: 32px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+
   span{
     display: none;
+
+    @media (min-width: $viewport-md) {
+      display: inline;
+    }
   }
 }
 
@@ -235,6 +477,25 @@
     font-size: 16px;
     line-height: 22px;
   }
+
+  @media (min-width: $viewport-md) {
+    flex-direction: row;
+
+    width: auto;
+
+    margin-bottom: 24px;
+
+    position: static;
+
+    line-height: 24px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    margin-bottom: 38px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .info__count-item{
@@ -243,11 +504,23 @@
     margin-bottom: 6px;
   }
 
+  @media (min-width: $viewport-md) {
+    margin-bottom: 0;
+  }
+
   &:first-child{
     margin-right: 24px;
 
     @media (min-width: $viewport-sm) {
       margin-right: 0;
+    }
+
+    @media (min-width: $viewport-md) {
+      margin-right: 32px;
+    }
+
+    @media (min-width: $viewport-lg) {
+      margin-right: 50px;
     }
   }
 
@@ -255,6 +528,10 @@
 
     @media (min-width: $viewport-sm) {
       margin-left: 110px;
+    }
+
+    @media (min-width: $viewport-md) {
+      margin-left: 0;
     }
 
   }

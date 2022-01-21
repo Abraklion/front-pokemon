@@ -3,8 +3,14 @@
 
   background-color: $bg-footer;
 
+  user-select: $blockText;
+
   @media (min-width: $viewport-sm) {
     margin-top: 64px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    margin-top: 96px;
   }
 }
 
@@ -16,8 +22,13 @@
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
+    grid-row-gap: 0;
 
     padding: 32px 0;
+  }
+
+  @media (min-width: $viewport-lg) {
+    padding: 47px 0;
   }
 }
 
@@ -36,6 +47,11 @@
 
     margin: 0;
   }
+
+  @media (min-width: $viewport-lg) {
+    width: 168px;
+    height: 64px;
+  }
 }
 
 .footer__logo{
@@ -43,6 +59,9 @@
 
   width: inherit;
   height: inherit;
+
+  position: relative;
+  z-index: 1;
 }
 
 .footer__copyright{
@@ -56,6 +75,14 @@
   line-height: 10px;
 
   color: rgba($color-footer,0.8);
+
+  @media (min-width: $viewport-lg) {
+    font-size: 10px;
+    line-height: 10px;
+
+    left: 58px;
+    bottom: 6px;
+  }
 }
 
 .footer__list{
@@ -80,6 +107,10 @@
 
   &:not(:last-child){
     margin: 0 20px 0 0;
+
+    @media (min-width: $viewport-md) {
+      margin-right: 30px;
+    }
   }
 
   img{
@@ -101,5 +132,27 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  color: rgba($color-footer,08);
+  color: rgba($color-footer,0.8);
+
+  transition: color 0.2s ease;
+
+  @media (min-width: $viewport-md) {
+    font-size: 13px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $viewport-lg) {
+
+    &:hover{
+      color: $color-footer;
+    }
+
+    &:active{
+      color: rgba($color-footer,0.6);
+    }
+  }
 }

@@ -7,6 +7,8 @@
   background-size: 64px 64px;
   background-repeat: repeat;
 
+  user-select: $blockText;
+
   @media (min-resolution: 2dppx) {
     background-image: url(../img/bg-secondary@2x.jpg);
   }
@@ -60,6 +62,38 @@
       background-image: url(../img/bg-social-sm@3x.png), url(../img/bg-secondary@3x.jpg);
     }
   }
+
+  @media (min-width: $viewport-md) {
+    padding: 20px 16px;
+
+    background-image: url(../img/bg-social-md.png), url(../img/bg-secondary.jpg);
+    background-position: 17px 20px,0 0;
+    background-size: 662px 228px,64px 64px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-social-md@2x.png), url(../img/bg-secondary@2x.jpg);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../img/bg-social-md@3x.png), url(../img/bg-secondary@3x.jpg);
+    }
+  }
+
+  @media (min-width: $viewport-lg) {
+    padding: 24px 20px;
+
+    background-image: url(../img/bg-social-lg.png), url(../img/bg-secondary.jpg);
+    background-position: 20px 24px,0 0;
+    background-size: 896px 269px,64px 64px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-social-lg@2x.png), url(../img/bg-secondary@2x.jpg);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../img/bg-social-lg@3x.png), url(../img/bg-secondary@3x.jpg);
+    }
+  }
 }
 
 .social__title{
@@ -78,6 +112,21 @@
 
     font-size: 32px;
     line-height: 36px;
+  }
+
+  @media (min-width: $viewport-md) {
+    margin-top: 20px;
+
+    font-size: 34px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    margin-top: 40px;
+    padding: 0 10px;
+
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 
@@ -98,6 +147,13 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $viewport-lg) {
+    padding: 0 10px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .social__list{
@@ -115,12 +171,20 @@
 
     margin-bottom: 42px;
   }
+
+  @media (min-width: $viewport-md) {
+    justify-content: center;
+
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    margin-bottom: 44px;
+  }
 }
 
 .social__item{
   min-width: 168px;
-
-  background-color: $bg-vkontakte;
 
   border-radius: 4px;
 
@@ -130,6 +194,10 @@
     flex: 1 1 auto;
   }
 
+  @media (min-width: $viewport-md) {
+    flex: 0 0 166px;
+  }
+
   &:not(:last-child){
     margin: 0 0 16px 0;
 
@@ -137,14 +205,64 @@
       margin-bottom: 0;
       margin-right: 18px;
     }
+
+    @media (min-width: $viewport-lg) {
+      margin-right: 24px;
+    }
+  }
+
+  &:nth-child(1){
+
+    .social__link{
+      background-color: $bg-vkontakte;
+
+      &:hover{
+        background-color: darken($bg-vkontakte,8%);
+        box-shadow: inset 0 0 8px 0 darken($bg-vkontakte,5%), inset 0 0 10px 8px $bg-vkontakte;
+      }
+
+      &:active{
+        background-color: darken($bg-vkontakte,8%);
+        box-shadow: inset 0 0 8px 0 darken($bg-vkontakte,8%), inset 0 0 5px 8px darken($bg-vkontakte,8%);
+      }
+    }
+
   }
 
   &:nth-child(2){
-    background-color: $bg-discord;
+
+    .social__link{
+      background-color: $bg-discord;
+
+      &:hover{
+        background-color: darken($bg-discord,5%);
+        box-shadow: inset 0 0 8px 0 darken($bg-discord,5%), inset 0 0 10px 8px $bg-discord;
+      }
+
+      &:active{
+        background-color: darken($bg-discord,5%);
+        box-shadow: inset 0 0 8px 0 darken($bg-discord,5%), inset 0 0 5px 8px darken($bg-discord,5%);
+      }
+    }
+
   }
 
   &:nth-child(3){
-    background-color: $bg-telegram;
+
+    .social__link{
+      background-color: $bg-telegram;
+
+      &:hover{
+        background-color: darken($bg-telegram,8%);
+        box-shadow: inset 0 0 8px 0 darken($bg-telegram,5%), inset 0 0 10px 8px $bg-telegram;
+      }
+
+      &:active{
+        background-color: darken($bg-telegram,8%);
+        box-shadow: inset 0 0 8px 0 darken($bg-telegram,8%), inset 0 0 5px 8px darken($bg-telegram,8%);
+      }
+    }
+
   }
 }
 
@@ -162,7 +280,22 @@
   text-transform: uppercase;
 
   @media (min-width: $viewport-sm) {
-    padding: 10px 5px 10px 16px;
+    padding: 10px 5px;
+
+    text-align: center;
+  }
+
+  @media (min-width: $viewport-md) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $viewport-lg) {
+    border-radius: 4px;
+
+    box-shadow: none;
+
+    transition: background-color 0.25s ease , box-shadow 0.25s ease;
   }
 
   span{
@@ -178,5 +311,10 @@
   margin: 0 15px 0 0;
 
   fill: currentColor;
+
+  @media (min-width: $viewport-md) {
+    width: 38px;
+    height: 38px;
+  }
 }
 

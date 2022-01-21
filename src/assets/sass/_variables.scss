@@ -43,8 +43,8 @@ $primary: #FFC83D;
 $secondary: #EBA900;
 
 // Скопированный текст
-//$bgTextCopy: $white; // фон выделенного текста
-//$colorTextCopy: $primary; // цвет выделенного текста
+$bgTextCopy: #3A372F; // фон выделенного текста
+$colorTextCopy: #DAD4C5; // цвет выделенного текста
 
 // Заблокировать копировать текста: none - запретить |  auto - разрешить
 $blockText: none;
@@ -96,6 +96,7 @@ $bg-color-inform: $black; // цвет текста
 // Первый экран
 $color-subtitle: $secondary; // цвет текста "Онлайн игра про Покемонов"
 $color-title: $text-color; // цвет заголовка
+$bg-info: $primary-bg; // цвет фона
 
 // Новости
 $bg-news: $secondary-bg; // цвет фона
@@ -111,6 +112,7 @@ $icon-color-article: $secondary; // цвет иконок
 $bg-event: $secondary-bg; // цвет фона
 $color-event: $white; // цвет текста событий
 $bg-heading: $primary; // цвет фона названия события
+$bg-heading-event2: $primary-bg; // цвет фона названия события
 $bg-event-icon: $secondary; // цвет иконок
 
 // Рейтинг
@@ -120,6 +122,9 @@ $icon-color-red-rating: #F43E04; // цвет иконки ранг
 $icon-color-red-pokedex: #67CB19; // цвет иконки покедекс
 $icon-color-red-shainidex: #04BBF4; // цвет иконки шайнидекс
 $bg-line-rating: $black; // цвет линии
+
+// Предложение стать тренером
+$color-offer: $white; // цвет текста соц сети
 
 // Социальные сети
 $bg-social: $secondary-bg; // цвет фона
