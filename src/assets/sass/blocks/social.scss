@@ -94,6 +94,22 @@
       background-image: url(../img/bg-social-lg@3x.png), url(../img/bg-secondary@3x.jpg);
     }
   }
+
+  @media (min-width: $viewport-xl) {
+    padding: 24px;
+
+    background-image: url(../img/bg-social-xl.png), url(../img/bg-secondary.jpg);
+    background-position: 24px 24px, 0 0;
+    background-size: 1071px 270px, 64px 64px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-social-xl@2x.png), url(../img/bg-secondary@2x.jpg);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../img/bg-social-xl@3x.png), url(../img/bg-secondary@3x.jpg);
+    }
+  }
 }
 
 .social__title{
@@ -128,6 +144,10 @@
     font-size: 36px;
     line-height: 40px;
   }
+
+  @media (min-width: $viewport-xl) {
+    font-size: 40px;
+  }
 }
 
 .social__subtitle{
@@ -153,6 +173,13 @@
 
     font-size: 18px;
     line-height: 27px;
+  }
+
+  @media (min-width: $viewport-xl) {
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-bottom: 32px;
   }
 }
 

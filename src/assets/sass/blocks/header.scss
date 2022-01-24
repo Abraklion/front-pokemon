@@ -35,6 +35,10 @@
     width: auto;
     height: 54px;
   }
+
+  @media (min-width: $viewport-xl) {
+    top: 3px;
+  }
 }
 
 .header__navigation{
@@ -162,5 +166,12 @@
     order: 3;
 
     margin-left: 0;
+  }
+
+  @media (min-width: $viewport-xl) {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
   }
 }

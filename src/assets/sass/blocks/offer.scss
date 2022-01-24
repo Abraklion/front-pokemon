@@ -61,6 +61,11 @@
 
     text-align: center;
   }
+
+  @media (min-width: $viewport-xl) {
+    font-size: 60px;
+    line-height: 89px;
+  }
 }
 
 .offer__subtitle{
@@ -73,6 +78,11 @@
     text-align: center;
 
     color: rgba($color-offer,0.8);
+  }
+
+  @media (min-width: $viewport-xl) {
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 

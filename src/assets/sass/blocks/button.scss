@@ -70,5 +70,9 @@
       text-align: center;
     }
 
+    @media (min-width: $viewport-xl) {
+      padding: 24px 5px;
+    }
+
   }
 }

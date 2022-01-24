@@ -41,6 +41,10 @@
     margin-top: 0;
   }
 
+  @media (min-width: $viewport-xl) {
+    padding-right: 32px;
+  }
+
   &::before{
     @media (min-width: $viewport-lg) {
       content: "";
@@ -106,6 +110,11 @@
     margin-bottom: 32px;
 
     line-height: 53px;
+  }
+
+  @media (min-width: $viewport-xl) {
+    font-size: 40px;
+    line-height: 59px;
   }
 }
 

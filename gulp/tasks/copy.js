@@ -5,8 +5,9 @@ module.exports = function () {
   $.gulp.task('copy', () => {
 
     return $.gulp.src([
-      $.config.paths.other + '*.ico',
-      $.config.paths.other + '*.webmanifest'
+      $.config.paths.other + '*.svg',
+      $.config.paths.other + '*.webmanifest',
+      $.config.paths.other + '*.png',
     ], {
       base: 'src/other'
     })

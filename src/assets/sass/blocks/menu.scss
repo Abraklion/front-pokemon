@@ -43,6 +43,10 @@
     line-height: 18px;
   }
 
+  @media (min-width: $viewport-xl) {
+    font-size: 18px;
+  }
+
   &:not(:last-child){
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 

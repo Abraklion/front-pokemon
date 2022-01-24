@@ -59,6 +59,10 @@
     box-shadow: 0 0 12px 0 rgba($black,0.2);
   }
 
+  @media (min-width: $viewport-xl) {
+    padding-bottom: 74px;
+  }
+
   &--fixed_width{
     @media (min-width: $viewport-sm) {
       max-width: 480px;
@@ -83,11 +87,23 @@
         }
       }
     }
+
+    @media (min-width: $viewport-xl) {
+      padding-bottom: 64px;
+    }
   }
 
-  &--fixed_width{
+  &--padding_top{
     @media (min-width: $viewport-lg) {
       padding-top: 92px;
+    }
+  }
+
+  &--fixed_reg{
+    @media (min-width: $viewport-sm) {
+      max-width: 924px;
+
+      margin: 32px auto;
     }
   }
 
