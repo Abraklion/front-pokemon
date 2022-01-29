@@ -19,22 +19,29 @@
     border-top: 2px solid rgba(255, 255, 255, 0.15);
   }
 
+  &::after{
+
+    @media (min-width: $viewport-lg) {
+      content: "";
+
+      display: block;
+
+      width: 100%;
+      height: 400px;
+
+      background-position: center;
+      background-size: 919px 400px;
+      background-repeat: no-repeat;
+    }
+
+  }
+
   &--charizard{
 
     @media (min-width: $viewport-lg) {
-
       &::after{
-        content: "";
-
-        display: block;
-
-        width: 100%;
-        height: 400px;
-
         background-image: url(../img/bg-charizard-offer-lg.png);
-        background-position: center;
-        background-size: 919px 400px;
-        background-repeat: no-repeat;
+
 
         @media (min-resolution: 2dppx) {
           background-image: url(../img/bg-charizard-offer-lg@2x.png);
@@ -44,7 +51,25 @@
           background-image: url(../img/bg-charizard-offer-lg@3x.png);
         }
       }
+    }
 
+  }
+
+  &--incineroar{
+
+    @media (min-width: $viewport-lg) {
+      &::after{
+        background-image: url(../img/bg-incineroar-offer-lg.png);
+
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-incineroar-offer-lg@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-incineroar-offer-lg@3x.png);
+        }
+      }
     }
 
   }
