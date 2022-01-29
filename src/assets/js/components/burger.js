@@ -1,3 +1,9 @@
+/* =====================================================
+*
+*  ОТКРЫТИЯ МЕНЮ ПО КЛИКУ НА БУРГЕР НА МОБИЛЬНЫХ ВЕРСИЯХ
+*
+* ==================================================== */
+
 try {
 
   /* ============ Переменные =============*/
@@ -11,11 +17,23 @@ try {
 
     evt.preventDefault();
 
-      this.classList.toggle("header__burger--close");
+    this.classList.toggle("header__burger--close");
 
-      this.nextElementSibling.classList.toggle("header__menu--active");
+    this.nextElementSibling.classList.toggle("header__menu--active");
 
-      document.querySelector(".page__body").classList.toggle("page__body--overflow");
+    let textBurger = this.firstElementChild.innerText;
+
+    if(textBurger === "Открыть меню"){
+
+      this.firstElementChild.innerText = "Закрыть меню"
+
+    }else{
+
+      this.firstElementChild.innerText = "Открыть меню"
+
+    }
+
+    document.querySelector(".page__body").classList.toggle("page__body--overflow");
 
   });
 

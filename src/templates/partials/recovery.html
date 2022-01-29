@@ -1,15 +1,15 @@
 <section class="modal js-recovery">
   <div class="container">
 
-    <div class="modal__inner modal__inner--fixed_width modal__inner--padding_top">
+    <div class="modal__inner modal__inner--fixed_width modal__inner--padding_top" role="dialog" aria-labelledby="modal__title--recovery" aria-modal="true">
 
-      <h2 class="modal__title">Восстановить пароль</h2>
+      <h2 class="modal__title" id="modal__title--recovery">Восстановить пароль</h2>
 
-      <form class="modal__form form" action="/" method="POST">
+      <form class="modal__form form js-form" name="recovery" action="/" method="POST" data-name="recovery">
 
         <div class="form__element">
           <label class="visually-hidden" for="email-recovery">Почта</label>
-          <input class="form__input" id="email-recovery" type="email" name="email" minlength="3" maxlength="30" placeholder="Адрес вашей электронной почты" autocomplete="off" required>
+          <input class="form__input" id="email-recovery" type="email" name="email" data-length="ok" data-email="ok" minlength="3" maxlength="30" placeholder="Адрес вашей электронной почты" autocomplete="off" required>
         </div>
 
         <div class="form__element">

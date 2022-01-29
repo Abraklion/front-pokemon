@@ -1,20 +1,20 @@
 <section class="modal js-enter">
   <div class="container">
 
-    <div class="modal__inner modal__inner--fixed_width">
+    <div class="modal__inner modal__inner--fixed_width" role="dialog" aria-labelledby="modal__title--enter" aria-modal="true">
 
-      <h2 class="modal__title">Войти в игру</h2>
+      <h2 class="modal__title" id="modal__title--enter">Войти в игру</h2>
 
-      <form class="modal__form form" action="/" method="POST">
+      <form class="modal__form form js-form" name="enter" action="/" method="POST" data-name="enter">
 
         <div class="form__element">
-          <label class="visually-hidden" for="name-enter">Имя тренера</label>
-          <input class="form__input" id="name-enter" type="text" name="name" minlength="3" maxlength="20" placeholder="Логин" required>
+          <label class="visually-hidden" for="name-enter" aria-label="Логин">Логин</label>
+          <input class="form__input" id="name-enter" type="text" name="name" data-length="ok" minlength="3" maxlength="20" placeholder="Логин" required>
         </div>
 
         <div class="form__element">
           <label class="visually-hidden" for="password-enter">Пароль</label>
-          <input class="form__input" id="password-enter" type="password" name="password" minlength="3" maxlength="20" placeholder="Пароль" required>
+          <input class="form__input" id="password-enter" type="password" name="password" data-length="ok" minlength="3" maxlength="20" placeholder="Пароль" required>
         </div>
 
         <div class="form__element">

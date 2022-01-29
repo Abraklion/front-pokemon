@@ -1,19 +1,19 @@
 <section class="modal js-registration">
   <div class="container">
 
-    <div class="modal__inner modal__inner--fixed_reg">
+    <div class="modal__inner modal__inner--fixed_reg" role="dialog" aria-labelledby="modal__title--registration" aria-modal="true">
 
-      <h2 class="modal__title">Регистрация тренера</h2>
+      <h2 class="modal__title" id="modal__title--registration">Регистрация тренера</h2>
 
-      <form class="modal__form form form--columns_2" action="/" method="POST">
+      <form class="modal__form form form--columns_2 js-form" name="registration" action="/" method="POST" data-name="registration">
 
         <div class="form__element">
           <label class="form__name" for="name">Имя тренера</label>
-          <input class="form__input" id="name" type="text" name="name" minlength="3" maxlength="20" placeholder="Логин может состоять только из букв" autocomplete="off" required>
+          <input class="form__input" id="name" type="text" name="name" data-length="ok" data-symbol="ok" minlength="3" maxlength="20" placeholder="Логин только из букв, без пробелов" autocomplete="off" required>
         </div>
 
         <div class="form__element">
-          <label class="form__name" for="male">Пол</label>
+          <label class="form__name" for="male" aria-label="Пол Мужской">Пол</label>
           <div class="form__radio-inner">
             <input class="form__radio visually-hidden" id="male" type="radio" name="floor" checked>
             <label class="form__floor" for="male">Мужской</label>
@@ -24,17 +24,17 @@
 
         <div class="form__element">
           <label class="form__name" for="password">Пароль</label>
-          <input class="form__input" id="password" type="password" name="password" minlength="3" maxlength="20" placeholder="Пароль может состоять только из букв и цифр" required>
+          <input class="form__input" id="password" type="password" name="password" data-length="ok" data-parent="ok" minlength="3" maxlength="20" placeholder="Пароль длиною максимум 20 символов" required>
         </div>
 
         <div class="form__element">
           <label class="form__name" for="repeat-password">Повторите пароль</label>
-          <input class="form__input" id="repeat-password" type="password" name="repeat-password" minlength="3" maxlength="20" placeholder="Повторите придуманный вами пароль" required>
+          <input class="form__input" id="repeat-password" type="password" name="repeat-password" data-comparisons="ok" minlength="3" maxlength="20" placeholder="Повторите придуманный вами пароль" required>
         </div>
 
         <div class="form__element">
           <label class="form__name" for="email">Почта</label>
-          <input class="form__input" id="email" type="email" name="repeat-password" minlength="3" maxlength="30" placeholder="Адрес вашей электронной почты" autocomplete="off" required>
+          <input class="form__input" id="email" type="email" name="email" data-length="ok" data-email="ok" minlength="3" maxlength="30" placeholder="Адрес вашей электронной почты" autocomplete="off" required>
         </div>
 
         <div class="form__element">

@@ -16,7 +16,7 @@
 
     border: 0 solid rgba($border-article,0.3);
 
-    transition: background-color 0.1s ease, border 0.1s ease;
+    transition: background-color 0.1s ease, border 0.1s ease, padding 0.15s ease;
 
     &--active{
       background-color: rgba($bg-article,$bg-article-opacity);
@@ -76,7 +76,7 @@
 
   text-align: center;
 
-  transition: height 0.2s ease;
+  transition: height 0.3s ease;
 
   @media (min-width: $viewport-sm) {
     padding: 0;
@@ -128,7 +128,7 @@
 
   color: rgba($color-article,0.8);
 
-  transition: height 0.2s ease;
+  transition: height 0.3s ease;
 
   @media (min-width: $viewport-sm) {
     height: 72px;
@@ -141,6 +141,135 @@
   &::selection{
     background-color: $bgTextCopy;
     color: $colorTextCopy;
+  }
+
+  p{
+    margin: 0 0 0 0;
+
+    &::selection{
+      background-color: $bgTextCopy;
+      color: $colorTextCopy;
+    }
+
+    .article--toggle &{
+
+      margin: 0 0 16px 0;
+
+    }
+  }
+
+  strong, b{
+    font-weight: 300;
+
+    &::selection{
+      background-color: $bgTextCopy;
+      color: $colorTextCopy;
+    }
+
+    .article--toggle &{
+
+      color: lighten($primary,8%);
+
+    }
+
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+
+    &::selection{
+      background-color: $bgTextCopy;
+      color: $colorTextCopy;
+    }
+
+    .article--toggle &{
+      text-decoration: underline;
+      color: lighten($primary,5%);
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+
+  ul{
+    list-style-position: inside;
+    list-style-type: decimal;
+
+    padding: 0;
+    margin: 0;
+
+    &::selection{
+      background-color: $bgTextCopy;
+      color: $colorTextCopy;
+    }
+
+    .article--toggle &{
+
+      margin: 0 0 16px 0;
+
+    }
+  }
+
+  li{
+    padding-left: 10px;
+
+    &::selection{
+      background-color: $bgTextCopy;
+      color: $colorTextCopy;
+    }
+
+    .article--toggle &{
+
+      margin: 0 0 5px 0;
+
+    }
+  }
+
+  &--red{
+
+    &::selection{
+      background-color: $bgTextCopy;
+      color: $colorTextCopy;
+    }
+
+    .article--toggle &{
+
+      color: #F43E04;
+
+    }
+
+  }
+
+  &--green{
+
+    &::selection{
+      background-color: $bgTextCopy;
+      color: $colorTextCopy;
+    }
+
+    .article--toggle &{
+
+      color: #67CB19;
+
+    }
+
+  }
+
+  &--blue{
+
+    &::selection{
+      background-color: $bgTextCopy;
+      color: $colorTextCopy;
+    }
+
+    .article--toggle &{
+
+      color: #04BBF4;
+
+    }
+
   }
 }
 

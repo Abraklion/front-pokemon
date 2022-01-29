@@ -15,6 +15,33 @@
     padding: 20px 0;
   }
 
+  &:before{
+
+    @media (min-width: $viewport-xl) {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: -20px;
+
+      width: 100%;
+      height: 100%;
+
+      background-image: url(../img/bg-body.jpg);
+      background-position: 0 0;
+      background-size: 64px 64px;
+      background-repeat: repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/bg-body@2x.jpg);
+      }
+
+      @media (min-resolution: 3dppx) {
+        background-image: url(../img/bg-body@3x.jpg);
+      }
+    }
+  }
+
 }
 
 .header__logo{
@@ -173,5 +200,8 @@
 
     display: flex;
     align-items: center;
+
+    position: relative;
+    z-index: 1;
   }
 }

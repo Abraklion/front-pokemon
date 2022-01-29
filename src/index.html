@@ -8,43 +8,47 @@ link: style.min.css
 script: app.min.js
 ---
 
-<!-- Шапка -->
-{{> header}}
+<div class="page__main">
 
-<main class="page__content">
+  <!-- Шапка -->
+  {{> header}}
 
-  <h1 class="visually-hidden">OldPokemon - браузерная онлайн игра про Покемонов</h1>
+  <main class="page__content">
 
-  <!-- Первый экран -->
-  {{> info}}
+    <h1 class="visually-hidden">OldPokemon - браузерная онлайн игра про Покемонов</h1>
 
-  <div class="container container--fluid">
+    <!-- Первый экран -->
+    {{> info}}
 
-    <div class="page__inner">
+    <div class="container container--fluid">
 
-      <!-- Новости -->
-      {{> news}}
+      <div class="page__inner">
 
-      <!-- События -->
-      {{> events}}
+        <!-- Новости -->
+        {{> news}}
+
+        <!-- События -->
+        {{> events}}
+
+      </div><!-- /.page__inner -->
 
     </div>
 
-  </div>
+    <!-- Рейтинг -->
+    {{> rating}}
 
-  <!-- Рейтинг -->
-  {{> rating}}
+    <!-- Предложения -->
+    {{> offer}}
 
-  <!-- Предложения -->
-  {{> offer}}
+    <!-- Социальные сети -->
+    {{> social}}
 
-  <!-- Социальные сети -->
-  {{> social}}
+  </main><!-- /.page__content -->
 
-</main>
+  <!-- Подвал -->
+  {{> footer}}
 
-<!-- Подвал -->
-{{> footer}}
+</div><!-- /.page__main -->
 
 <!-- Модальное окно регистрации -->
 {{> registration}}
@@ -60,5 +64,8 @@ script: app.min.js
 
 <!-- Прокрутить вверх -->
 {{> up}}
+
+<!-- Предупреждения что JavaScript отключен-->
+{{> noscript}}
 
 {{> script}}

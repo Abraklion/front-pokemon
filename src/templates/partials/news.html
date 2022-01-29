@@ -3,7 +3,58 @@
   <h2 class="news__title">{{news.sectionTitle}}</h2>
 
   <ul class="news__list">
-    {{#repeat 15}}
+
+    <li class="news__item js-news__item">
+
+      <article class="article">
+
+        <div class="article__img-wrapper">
+          <figure class="article__img">
+            <img src="assets/img/{{news.imgNews}}" width="100" height="110" loading="lazy" alt="">
+          </figure>
+        </div>
+
+        <header class="article__header">
+          <h3 class="article__title">{{news.titleNews}}</h3>
+        </header>
+
+        <div class="article__content__wrapper">
+          <div class="article__content">
+            <p>Когда я начал изучать <strong>Хаскель</strong>, я был почти сразу поражён. Для начала, нырнув с </p>
+            <p>Хорошо, я решился снова это осилить и узнать всё об этих расширениях, и я вывел три горячих топика для общества <strong>Хаскеля</strong>, которые решали похожие проблемы: Обобщённые Алгебраические Типы Данных, Семьи Типов и Функциональные Зависимости.</p>
+            <p>Рейтинг игроков:</p>
+            <ul>
+              <li>Красный <span class="article__content--red">Ранг</span></li>
+              <li>Зеленый <span class="article__content--green">Покедекс</span></li>
+              <li>Синий <span class="article__content--blue">Шайнидекс</span></li>
+            </ul>
+            <p>Хотелось бы, чтобы вы узнали о них и <a href="" target="_blank" tabindex="-1">обратили внимание</a>. В игре стало доступно учас... До 8 января вы получите на 50% больше <span class="article__content--red">Ранг</span> при первой их покупке в Алмазном магазине! Обновлен ассортимент Новогодних товаров в Алмазном магазине. Также совсем скоро тренеров ждет Новогодние магические испытания Джирачи и Новогодний путь тренера!Всех тренеров поздравляем с <span class="article__content--green">Покедекс</span>, пусть все ваши мечты сбываются, здоровье всегда было крепким, и удача <span class="article__content--blue">Шайнидекс</span> вас преследовала где бы вы ни находились!</p>
+          </div>
+        </div>
+
+        <footer class="article__footer">
+          <ul class="article__list">
+            <li class="article__item">
+              <svg class="article__item-svg" width="12" height="12" aria-label="Автор">
+                <use xlink:href="assets/img/sprite.svg#user"/>
+              </svg>
+              {{news.authorNews}}
+            </li>
+            <li class="article__item">
+              <svg class="article__item-svg" width="12" height="12" aria-label="Дата статьи">
+                <use xlink:href="assets/img/sprite.svg#time"/>
+              </svg>
+              {{news.dateNews}}
+            </li>
+          </ul>
+          <a href="" class="article__button js-full_article">{{news.more}}</a>
+        </footer>
+
+      </article><!--/.article-->
+
+    </li><!--/.news__item-->
+
+    {{#repeat 14}}
 
     <li class="news__item js-news__item">
 

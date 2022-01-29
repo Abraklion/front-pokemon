@@ -12,7 +12,15 @@
 
   opacity: 1;
 
+  cursor: pointer;
+
   transition: opacity 0.3s ease;
+
+  @media (min-width: $viewport-lg) {
+    margin-bottom: 24px;
+
+    line-height: 24px;
+  }
 
   &.hide{
     opacity: 0;
@@ -44,6 +52,10 @@
 
   p{
     margin: 4px 0;
+  }
+
+  strong{
+    font-weight: 500;
   }
 }
 
@@ -95,5 +107,12 @@
     background-position: 13px center;
     background-size: 22px;
     background-repeat: no-repeat;
+  }
+
+  &--noscript{
+    @media (min-width: $viewport-lg) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
   }
 }
