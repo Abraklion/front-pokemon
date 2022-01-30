@@ -74,6 +74,44 @@
 
   }
 
+  &--mewtwo{
+
+    @media (min-width: $viewport-lg) {
+      &::after{
+        background-image: url(../img/bg-mewtwo-offer-lg.png);
+
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-mewtwo-offer-lg@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-mewtwo-offer-lg@3x.png);
+        }
+      }
+    }
+
+  }
+
+  &--ivysaur{
+
+    @media (min-width: $viewport-lg) {
+      &::after{
+        background-image: url(../img/bg-ivysaur-offer-lg.png);
+
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-ivysaur-offer-lg@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-ivysaur-offer-lg@3x.png);
+        }
+      }
+    }
+
+  }
+
 }
 
 .offer__title{

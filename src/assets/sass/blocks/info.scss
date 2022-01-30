@@ -374,6 +374,173 @@
     }
   }
 
+  &--mewtwo{
+
+    &::before{
+
+      background-image: url(../img/bg-mewtwo-xs.png);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/bg-mewtwo-xs@2x.png);
+      }
+
+      @media (min-resolution: 3dppx) {
+        background-image: url(../img/bg-mewtwo-xs@3x.png);
+      }
+
+      @media (min-width: 393px) {
+        background-image: url(../img/bg-mewtwo-393-xs.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-mewtwo-393-xs@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-mewtwo-393-xs@3x.png);
+        }
+      }
+
+      @media (min-width: $viewport-sm) {
+        background-image: url(../img/bg-mewtwo-sm.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-mewtwo-sm@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-mewtwo-sm@3x.png);
+        }
+      }
+
+      @media (min-width: $viewport-md) {
+        background-image: url(../img/bg-mewtwo-md.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-mewtwo-md@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-mewtwo-md@3x.png);
+        }
+      }
+
+      @media (min-width: $viewport-lg) {
+        background-image: url(../img/bg-mewtwo-lg.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-mewtwo-lg@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-mewtwo-lg@3x.png);
+        }
+      }
+
+      @media (min-width: $viewport-xl) {
+        background-image: url(../img/bg-mewtwo-xl.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-mewtwo-xl@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-mewtwo-xl@3x.png);
+        }
+      }
+    }
+
+  }
+
+  &--ivysaur{
+
+    &::before{
+
+      background-image: url(../img/bg-ivysaur-xs.png);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/bg-ivysaur-xs@2x.png);
+      }
+
+      @media (min-resolution: 3dppx) {
+        background-image: url(../img/bg-ivysaur-xs@3x.png);
+      }
+
+      @media (min-width: 349px) {
+        background-image: url(../img/bg-ivysaur-340-xs.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-ivysaur-340-xs@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-ivysaur-340-xs@3x.png);
+        }
+      }
+
+      @media (min-width: 393px) {
+        background-image: url(../img/bg-ivysaur-393-xs.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-ivysaur-393-xs@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-ivysaur-393-xs@3x.png);
+        }
+      }
+
+      @media (min-width: $viewport-sm) {
+        background-image: url(../img/bg-ivysaur-sm.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-ivysaur-sm@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-ivysaur-sm@3x.png);
+        }
+      }
+
+      @media (min-width: $viewport-md) {
+        background-image: url(../img/bg-ivysaur-md.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-ivysaur-md@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-ivysaur-md@3x.png);
+        }
+      }
+
+      @media (min-width: $viewport-lg) {
+        background-image: url(../img/bg-ivysaur-lg.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-ivysaur-lg@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-ivysaur-lg@3x.png);
+        }
+      }
+
+      @media (min-width: $viewport-xl) {
+        background-image: url(../img/bg-ivysaur-xl.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/bg-ivysaur-xl@2x.png);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: url(../img/bg-ivysaur-xl@3x.png);
+        }
+      }
+
+    }
+
+  }
+
 }
 
 .info__wrapper-text{
