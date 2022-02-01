@@ -176,6 +176,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    opacity: 1;
+
+    transition: opacity 0.8s ease;
+
     @media (min-width: 393px) {
       width: 190px;
       height: 195px;
@@ -219,6 +223,16 @@
       width: 550px;
       height: 557px;
     }
+  }
+
+  &--hidden{
+
+    &::before{
+
+      opacity: 0;
+
+    }
+
   }
 
   &--charizard{
@@ -600,10 +614,11 @@
     }
 
     @media (min-width: $viewport-xl) {
-      width: 550px;
-      height: 550px;
+      width: 600px;
+      height: 600px;
 
-      left: -142px;
+      top: -120px;
+      left: -182px;
 
       background-image: radial-gradient(295px at center center,rgba(255,200,61,.1),rgba(207,100,77,0));
     }

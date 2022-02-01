@@ -9,3 +9,4 @@
 //= components/form.js
 //= components/scrollTop.js
 //= components/answer.js
+//= components/animation_pokemons.js

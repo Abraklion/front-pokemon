@@ -213,8 +213,6 @@
 .social__item{
   min-width: 168px;
 
-  border-radius: 4px;
-
   @media (min-width: $viewport-sm) {
     min-width: auto;
 
@@ -298,6 +296,8 @@
 
   padding: 10px 0 10px 26px;
 
+  border-radius: 4px;
+
   font-size: 14px;
   line-height: 14px;
 
@@ -318,8 +318,6 @@
   }
 
   @media (min-width: $viewport-lg) {
-    border-radius: 4px;
-
     box-shadow: none;
 
     transition: background-color 0.25s ease , box-shadow 0.25s ease;

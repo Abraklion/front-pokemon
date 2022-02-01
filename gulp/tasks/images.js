@@ -12,17 +12,17 @@ module.exports = function () {
 
     // Конвертирует в формат webp
     $.gulp.src($.config.paths.images.webp + '**/*.{jpg,png,gif}')
-      .pipe($.gp.webp({quality: 90}))
+      .pipe($.gp.webp({quality: 100}))
       .pipe($.gulp.dest($.config.output.pathImg));
 
     // Просто переносит gif,ico,webp
-    $.gulp.src($.config.paths.images.img + '*.{gif,ico,webp}')
+    $.gulp.src($.config.paths.images.img + '*.{gif,ico,webp,svg}')
       .pipe($.gulp.dest($.config.output.pathImg));
 
     // Минифицирует и переносит jpg,svg
-    $.gulp.src([$.config.paths.images.img + '*.{jpg,svg}', $.config.paths.images.webp + '*.jpg'])
+    $.gulp.src([$.config.paths.images.img + '*.jpg', $.config.paths.images.webp + '*.jpg'])
       .pipe($.gp.if($.config.toggle.resizeImg,$.gp.imagemin([
-        $.gp.imagemin.mozjpeg({quality: 90, progressive: true}),
+        $.gp.imagemin.mozjpeg({quality: 100, progressive: true}),
         $.gp.imagemin.optipng({optimizationLevel: 5}),
         $.gp.imagemin.svgo({
           plugins: [
@@ -38,7 +38,7 @@ module.exports = function () {
       .pipe($.gp.if($.config.toggle.resizeImg,$.gp.tinypngCompress({
         key: 'lQQPChk3pl9KJSFhKl0nH4kWx5vkqptk',
         parallel: false, // асинхронная загрузка всех картинок (по умолчанию: true)
-        parallelMax: 2, // сколько за раз отправлять картинок на сервер (по умолчанию: 5)
+        parallelMax: 1, // сколько за раз отправлять картинок на сервер (по умолчанию: 5)
         summarize: true // сообщения в консоль после сжатия (по умолчанию: false)
       })))
       .pipe($.gulp.dest($.config.output.pathImg));

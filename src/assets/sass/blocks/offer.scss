@@ -32,6 +32,22 @@
       background-position: center;
       background-size: 919px 400px;
       background-repeat: no-repeat;
+
+      opacity: 1;
+
+      transition: opacity 0.8s ease;
+    }
+
+  }
+
+  &--hidden{
+
+    &::after{
+
+      @media (min-width: $viewport-lg) {
+        opacity: 0;
+      }
+
     }
 
   }
