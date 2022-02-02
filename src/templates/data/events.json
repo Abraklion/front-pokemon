@@ -7,12 +7,36 @@
     "img": "sword.svg",
     "time": "12.11.2021"
   },
-  "post2" :{
-    "title": "Антикварный дом",
-    "trainer": "Divergent Kings_DK-0",
-    "pokemon": "Спаркозавр",
-    "img": "charmeleon.png",
-    "time": "12.11.2021"
-  }
+  "post2" : {
 
+    "title": "Антикварный дом",
+
+    "item": [
+      {
+        "trainer": "Divergent Kings_DK-0",
+        "pokemon": "Спаркозавр",
+        "img": "001.gif",
+        "time": "12.11.2021"
+      },
+      {
+        "trainer": "Divergent Kings_DK-0",
+        "pokemon": "Спаркозавр",
+        "img": "002.gif",
+        "time": "12.11.2021"
+      },
+      {
+        "trainer": "Divergent Kings_DK-0",
+        "pokemon": "Спаркозавр",
+        "img": "003.gif",
+        "time": "12.11.2021"
+      },
+      {
+        "trainer": "Divergent Kings_DK-0",
+        "pokemon": "Спаркозавр",
+        "img": "005.gif",
+        "time": "12.11.2021"
+      }
+    ]
+
+  }
 }

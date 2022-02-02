@@ -41,28 +41,28 @@
       <h3 class="events__heading">{{events.post2.title}}</h3>
 
       <ul class="events__list">
-        {{#repeat 4}}
+        {{#each events.post2.item}}
 
         <li class="events__item">
 
           <div class="events__header">
-            <h4 class="events__trainer">Тренер: <span>{{events.post2.trainer}}</span></h4>
-            <h5 class="events__pokemon">Покемон: <a href="">{{events.post2.pokemon}}</a></h5>
+            <h4 class="events__trainer">Тренер: <span>{{this.trainer}}</span></h4>
+            <h5 class="events__pokemon">Покемон: <a href="">{{this.pokemon}}</a></h5>
             <p class="event__date">
               <svg class="events__svg" width="12" height="12" aria-label="Дата статьи">
                 <use xlink:href="assets/img/sprite.svg#time"/>
               </svg>
-              {{events.post2.time}}
+              {{this.time}}
             </p>
           </div>
           <div class="events__img events__img--pokemon">
             <a href="" class="events__img-link">
-              <img src="assets/img/{{events.post2.img}}" width="30" height="30" loading="lazy" alt="Фото {{events.post2.pokemon}}">
+              <img src="assets/img/{{this.img}}" width="30" height="30" loading="lazy" alt="Фото {{events.post2.pokemon}}">
             </a>
           </div>
 
         </li><!--/.events__item-->
-        {{/repeat}}
+        {{/each}}
 
       </ul><!--/.events__list-->
 

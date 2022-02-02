@@ -266,8 +266,12 @@
     .events__img-link{
 
       img{
-        width: 30px;
-        height: 30px;
+        width: auto;
+        height: auto;
+
+        max-width: 32px;
+        max-height: 32px;
+
       }
     }
 
